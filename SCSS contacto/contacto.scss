@@ -1,0 +1,30 @@
+.menu{
+    max-height: 80px;
+}
+.menu img{
+    border-radius: 100%;
+    max-height: 65px;
+}
+.contacto{
+    margin-top: 15px;
+}
+.contacto__formulario form{
+    display: block;
+}
+label{
+    display: block;
+}
+.contacto{
+    display: grid;
+    grid-template-areas: 
+    "datos datos formu formu"
+    "datos datos formu formu";
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto auto;
+}
+.contacto__formulario{
+    grid-area: formu;
+}
+.contacto__datos{
+    grid-area: datos;
+}

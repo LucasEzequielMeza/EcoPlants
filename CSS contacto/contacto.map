@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "contacto.css",
+	"sources": [
+		"../SCSS contacto/contacto.scss"
+	],
+	"sourcesContent": [
+		".menu{\r\n    max-height: 80px;\r\n}\r\n.menu img{\r\n    border-radius: 100%;\r\n    max-height: 65px;\r\n}\r\n.contacto{\r\n    margin-top: 15px;\r\n}\r\n.contacto__formulario form{\r\n    display: block;\r\n}\r\nlabel{\r\n    display: block;\r\n}\r\n.contacto{\r\n    display: grid;\r\n    grid-template-areas: \r\n    \"datos datos formu formu\"\r\n    \"datos datos formu formu\";\r\n    grid-template-columns: 2fr 2fr 2fr 2fr;\r\n    grid-template-rows: auto auto;\r\n}\r\n.contacto__formulario{\r\n    grid-area: formu;\r\n}\r\n.contacto__datos{\r\n    grid-area: datos;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,KAAK,CAAA;EACD,UAAU,EAAE,IAAI;CACnB;;;AACD,AAAA,KAAK,CAAC,GAAG,CAAA;EACL,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CACnB;;;AACD,AAAA,SAAS,CAAA;EACL,UAAU,EAAE,IAAI;CACnB;;;AACD,AAAA,qBAAqB,CAAC,IAAI,CAAA;EACtB,OAAO,EAAE,KAAK;CACjB;;;AACD,AAAA,KAAK,CAAA;EACD,OAAO,EAAE,KAAK;CACjB;;;AACD,AAAA,SAAS,CAAA;EACL,OAAO,EAAE,IAAI;EACb,mBAAmB,EACnB,oDACyB;EACzB,qBAAqB,EAAE,eAAe;EACtC,kBAAkB,EAAE,SAAS;CAChC;;;AACD,AAAA,qBAAqB,CAAA;EACjB,SAAS,EAAE,KAAK;CACnB;;;AACD,AAAA,gBAAgB,CAAA;EACZ,SAAS,EAAE,KAAK;CACnB"
+}

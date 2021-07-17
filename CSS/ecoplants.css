@@ -1,0 +1,208 @@
+/* line 1, ../Final/scss/ecoplants.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 5, ../Final/scss/ecoplants.scss */
+.plantas {
+  display: grid;
+  grid-template-areas: "cactus rosas pino" "cactus rosas pino" "estrella suculentas clavel" "estrella suculentas clavel";
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: auto auto auto;
+}
+
+/* line 15, ../Final/scss/ecoplants.scss */
+.plantas__cactus {
+  grid-area: cactus;
+}
+
+/* line 18, ../Final/scss/ecoplants.scss */
+.plantas__rosas {
+  grid-area: rosas;
+}
+
+/* line 21, ../Final/scss/ecoplants.scss */
+.plantas__pinolimon {
+  grid-area: pino;
+}
+
+/* line 24, ../Final/scss/ecoplants.scss */
+.plantas__estrella {
+  grid-area: estrella;
+}
+
+/* line 27, ../Final/scss/ecoplants.scss */
+.plantas__suculentas {
+  grid-area: suculentas;
+}
+
+/* line 30, ../Final/scss/ecoplants.scss */
+.plantas__clavel {
+  grid-area: clavel;
+}
+
+/* line 33, ../Final/scss/ecoplants.scss */
+.navbar {
+  z-index: 1;
+  margin-bottom: 15px;
+  background: #cfcfce;
+  background: linear-gradient(180deg, #cfcfce 0%, #eaeaea 42%, #fffefe 70%);
+}
+
+/* line 39, ../Final/scss/ecoplants.scss */
+.menu {
+  max-height: 80px;
+}
+
+/* line 42, ../Final/scss/ecoplants.scss */
+.menu img {
+  border-radius: 100%;
+  max-height: 65px;
+}
+
+/* line 46, ../Final/scss/ecoplants.scss */
+.plantas {
+  margin: 40px;
+  align-items: center;
+}
+
+/* line 50, ../Final/scss/ecoplants.scss */
+.card {
+  margin: 25px;
+  max-width: 500px;
+  min-height: 450px;
+  transition: all 600ms ease-in-out;
+  box-shadow: 6px 5px 15px 6px #D7D7D7;
+}
+
+/* line 57, ../Final/scss/ecoplants.scss */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* line 60, ../Final/scss/ecoplants.scss */
+.card img {
+  width: 100%;
+  height: 50%;
+}
+
+/* line 64, ../Final/scss/ecoplants.scss */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 69, ../Final/scss/ecoplants.scss */
+.informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 74, ../Final/scss/ecoplants.scss */
+.informacion__titulo {
+  font-size: 35px;
+  color: black;
+  margin-top: 10px;
+  box-shadow: 0 0 0 0.45 #2e2e30;
+}
+
+/* line 80, ../Final/scss/ecoplants.scss */
+.carrusel {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 86, ../Final/scss/ecoplants.scss */
+.carousel {
+  width: 1200px;
+  margin-top: 15px;
+}
+
+/* line 91, ../Final/scss/ecoplants.scss */
+footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+/* line 99, ../Final/scss/ecoplants.scss */
+.footerContenido {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* line 104, ../Final/scss/ecoplants.scss */
+.footerContenido__social li {
+  display: inline;
+  cursor: pointer;
+}
+
+/* line 108, ../Final/scss/ecoplants.scss */
+.footerContenido__social li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  /* line 114, ../Final/scss/ecoplants.scss */
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* line 118, ../Final/scss/ecoplants.scss */
+  .plantas {
+    display: grid;
+    grid-template-areas: "cactus cactus" "rosas rosas" "pino pino" "estrella estrella" "suculentas suculentas" "clavel clavel";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+  }
+  /* line 130, ../Final/scss/ecoplants.scss */
+  .plantas__cactus {
+    grid-area: cactus;
+  }
+  /* line 133, ../Final/scss/ecoplants.scss */
+  .plantas__rosas {
+    grid-area: rosas;
+  }
+  /* line 136, ../Final/scss/ecoplants.scss */
+  .plantas__pinolimon {
+    grid-area: pino;
+  }
+  /* line 139, ../Final/scss/ecoplants.scss */
+  .plantas__estrella {
+    grid-area: estrella;
+  }
+  /* line 142, ../Final/scss/ecoplants.scss */
+  .plantas__suculentas {
+    grid-area: suculentas;
+  }
+  /* line 145, ../Final/scss/ecoplants.scss */
+  .plantas__clavel {
+    grid-area: clavel;
+  }
+  /* line 148, ../Final/scss/ecoplants.scss */
+  .menu {
+    max-height: 80px;
+  }
+  /* line 151, ../Final/scss/ecoplants.scss */
+  .menu img {
+    border-radius: 100%;
+    max-height: 65px;
+  }
+  /* line 155, ../Final/scss/ecoplants.scss */
+  .plantas {
+    margin: 40px;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=ecoplants.css.map */

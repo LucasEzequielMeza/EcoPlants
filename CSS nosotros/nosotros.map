@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "nosotros.css",
+	"sources": [
+		"../SCSS nosotros/nosotros.scss"
+	],
+	"sourcesContent": [
+		"*{\r\n    margin: 0px;\r\n    padding:0px;\r\n}\r\n.banner{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    width: 100%;\r\n    height: 400px;\r\n    background-image: url(../Media/Imagenes/baner.jpg);\r\n}\r\n.menu{\r\n    max-height: 80px;\r\n}\r\n.menu img{\r\n    border-radius: 100%;\r\n    max-height: 65px;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,GAAG;EACX,OAAO,EAAC,GAAG;CACd;;;AACD,AAAA,OAAO,CAAA;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,gCAAgC;CACrD;;;AACD,AAAA,KAAK,CAAA;EACD,UAAU,EAAE,IAAI;CACnB;;;AACD,AAAA,KAAK,CAAC,GAAG,CAAA;EACL,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CACnB"
+}

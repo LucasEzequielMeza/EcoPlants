@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "plantas.css",
+	"sources": [
+		"../scss/plantas.scss"
+	],
+	"sourcesContent": [
+		".informacion{\r\n    display: grid;\r\n    grid-template-areas: \r\n    \"riego riego img1 img1\"\r\n    \"img2 img2 luz luz\"\r\n    \"trans trans img3 img3\"\r\n    \"img4 img4 abono abono\";\r\n    grid-template-columns: 2fr 2fr 2fr 2fr;\r\n    grid-template-rows: auto auto auto auto;\r\n}\r\n.imformacion__riego{\r\n    grid-area: riego;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.informacion__img1{\r\n    grid-area: img1;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.informacion__img2{\r\n    grid-area: img2;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.informacion__luz{\r\n    grid-area: luz;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.informacion__transplante{\r\n    grid-area: trans;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.informacion__img3{\r\n    grid-area: img3;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.informacion__img4{\r\n    grid-area: img4;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.informacion__abono{\r\n    grid-area: abono;\r\n    border: 2px solid black;\r\n    margin: 2px;\r\n}\r\n.menu{\r\n    max-height: 80px;\r\n}\r\n.menu img{\r\n    border-radius: 100%;\r\n    max-height: 65px;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,YAAY,CAAA;EACR,OAAO,EAAE,IAAI;EACb,mBAAmB,EACnB,8FAGuB;EACvB,qBAAqB,EAAE,eAAe;EACtC,kBAAkB,EAAE,mBAAmB;CAC1C;;;AACD,AAAA,mBAAmB,CAAA;EACf,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,kBAAkB,CAAA;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,kBAAkB,CAAA;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,iBAAiB,CAAA;EACb,SAAS,EAAE,GAAG;EACd,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,yBAAyB,CAAA;EACrB,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,kBAAkB,CAAA;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,kBAAkB,CAAA;EACd,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,mBAAmB,CAAA;EACf,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,GAAG;CACd;;;AACD,AAAA,KAAK,CAAA;EACD,UAAU,EAAE,IAAI;CACnB;;;AACD,AAAA,KAAK,CAAC,GAAG,CAAA;EACL,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CACnB"
+}
