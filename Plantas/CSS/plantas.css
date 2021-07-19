@@ -1,6 +1,6 @@
 .informacion {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: ". riego riego ." ". luz luz ." ". trans trans ." ". abono abono .";
 }
@@ -11,6 +11,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .informacion__luz {
@@ -19,6 +21,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .informacion__transplante {
@@ -27,6 +31,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .informacion__abono {
@@ -35,6 +41,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .informacion__titulo {
@@ -50,9 +58,64 @@
   max-height: 65px;
 }
 
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .informacion__img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 6px 5px 15px 6px #D7D7D7;
+}
+
+.titulo {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.informacion__riego-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+.informacion__luz-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+.informacion__transplante-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+.informacion__abono-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
 }
 
 @media only screen and (max-width: 576px) {
@@ -94,6 +157,18 @@
     align-items: center;
     width: auto;
   }
+  .banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
   .informacion__titulo {
     text-align: center;
   }
@@ -103,6 +178,51 @@
   .menu img {
     border-radius: 100%;
     max-height: 65px;
+  }
+  .informacion__img {
+    max-width: 400px;
+    max-height: auto;
+  }
+  .informacion__riego-texto {
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  .informacion__luz-texto {
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  .informacion__transplante-texto {
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  .informacion__abono-texto {
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  .informacion__img {
+    width: 98%;
+    height: auto;
+    box-shadow: 6px 5px 15px 6px #D7D7D7;
   }
 }
 
