@@ -25,4 +25,70 @@
   max-height: 65px;
 }
 
+/* line 20, ../Final/SCSS nosotros/nosotros.scss */
+footer {
+  background: #838080;
+  height: auto;
+  width: 100%;
+}
+
+/* line 25, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido {
+  display: grid;
+  grid-template-areas: "  paginas social maps " " paginas social maps ";
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: auto auto auto;
+}
+
+/* line 33, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__maps {
+  grid-area: maps;
+  margin: 40px;
+}
+
+/* line 37, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__paginas {
+  width: 300px;
+  grid-area: paginas;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
+
+/* line 46, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__paginas li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* line 51, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__paginas li a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+/* line 55, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__social {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 15px;
+}
+
+/* line 63, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__social li {
+  list-style-type: none;
+}
+
+/* line 66, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__social li a img {
+  width: 50px;
+  height: 50px;
+}
+
 /*# sourceMappingURL=nosotros.css.map */

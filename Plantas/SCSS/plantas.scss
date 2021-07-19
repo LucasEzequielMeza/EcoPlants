@@ -108,6 +108,56 @@
         border: solid #dfe2e09a 3px;
         box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
     }
+    footer{
+        background: rgb(131, 128, 128);
+        height: auto;
+        width: 100%;
+    }
+    .footerContenido{
+        display: grid;
+        grid-template-areas: 
+        "  paginas social maps "
+        " paginas social maps ";
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: auto auto auto;
+    }
+    .footerContenido__maps{
+        grid-area: maps;
+        margin: 40px;
+    }
+    .footerContenido__paginas{
+        width: 300px;
+        grid-area: paginas;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .footerContenido__paginas li{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .footerContenido__paginas li a {
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+    .footerContenido__social{
+        grid-area: social;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 15px;
+    }
+    .footerContenido__social li{
+        list-style-type: none;
+    }
+    .footerContenido__social li a img{
+        width: 50px;
+        height: 50px;
+    }
 
     @media only screen and (max-width: 576px){
         .informacion{
@@ -218,6 +268,49 @@ width: auto;
                 width: 98%;
                 height: auto;
                 box-shadow: 6px 5px 15px 6px #D7D7D7;
+            }
+            .footerContenido{
+                display: grid;
+                grid-template-areas: 
+                "  paginas  "
+                " social  "
+                " maps ";
+                grid-template-columns: 2fr;
+                grid-template-rows: auto ;
+            }
+            .footerContenido__maps{
+                grid-area: maps;
+            }
+            .footerContenido__paginas{
+                grid-area: paginas;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .footerContenido__paginas li{
+                list-style-type: none;
+                text-decoration: none;
+                font-size: 22px;
+            }
+            .footerContenido__paginas li a {
+                text-decoration: none;
+                color: rgb(199, 199, 199);
+            }
+            .footerContenido__social{
+                grid-area: social;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px;
+                padding: 15px;
+            }
+            .footerContenido__social li{
+                list-style-type: none;
+            }
+            .footerContenido__social li a img{
+                width: 50px;
+                height: 50px;
             }
     }
 
