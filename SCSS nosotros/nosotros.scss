@@ -7,8 +7,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 400px;
-    background-image: url(../Media/Imagenes/baner.jpg);
+    height: 580px;
+}
+.banner__img{
+    width: 100%;
+    height: 580px;
 }
 .menu{
     max-height: 80px;
@@ -16,6 +19,21 @@
 .menu img{
     border-radius: 100%;
     max-height: 65px;
+}
+.nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nosotros__contenido{
+    width: 1650px;
+    height: auto;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
 }
 footer{
     background: rgb(131, 128, 128);
@@ -66,4 +84,68 @@ footer{
 .footerContenido__social li a img{
     width: 50px;
     height: 50px;
+}
+@media only screen and (max-width: 576px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 576px;
+        height: 301px;
+    }
+    .banner__img{
+        width: 576px;
+        height: 301px;
+    }
+    .nosotros__contenido{
+        margin: 9px;
+        padding: 3px;
+    }
+    .footerContenido{
+        display: grid;
+        grid-template-areas: 
+        "  paginas  "
+        " social  "
+        " maps ";
+        grid-template-columns: 2fr;
+        grid-template-rows: auto ;
+    }
+    .footerContenido__maps{
+        grid-area: maps;
+    }
+    .footerContenido__paginas{
+        grid-area: paginas;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerContenido__paginas li{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .footerContenido__paginas li a {
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+    .footerContenido__social{
+        grid-area: social;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 15px;
+    }
+    .footerContenido__social li{
+        list-style-type: none;
+    }
+    .footerContenido__social li a img{
+        width: 50px;
+        height: 50px;
+    }
 }

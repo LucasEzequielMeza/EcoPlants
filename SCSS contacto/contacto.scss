@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .menu{
     max-height: 80px;
 }
@@ -5,14 +9,19 @@
     border-radius: 100%;
     max-height: 65px;
 }
-.contacto{
-    margin-top: 15px;
+.contacto__formulario-nombre{
+    display: inline;
 }
-.contacto__formulario form{
-    display: block;
+.contacto__formulario-mensaje{
+    width: 100%;
+    height: auto;
 }
-label{
-    display: block;
+.form-control{
+    margin: 10px;
+    box-shadow: 2px 1px 4px 2px rgba(68, 63, 63, 0.767);
+}
+.contacto__formu{
+    width: 100%;
 }
 .contacto{
     display: grid;
@@ -21,12 +30,42 @@ label{
     "datos datos formu formu";
     grid-template-columns: 2fr 2fr 2fr 2fr;
     grid-template-rows: auto auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .contacto__formulario{
     grid-area: formu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+.contacto__datos-horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contacto__datos{
+    text-align: center;
     grid-area: datos;
+    width: 800px;
+    height: 390px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+}
+.contacto__formulario-boton{
+    text-align: center;
+}
+.contenido__datos-info{
+    margin: 15px;
+}
+.texto{
+    text-align: center;
+    font-size: 22px;
+    margin: 25px;
 }
 footer{
     background: rgb(131, 128, 128);
@@ -77,4 +116,84 @@ footer{
 .footerContenido__social li a img{
     width: 50px;
     height: 50px;
+}
+@media only screen and (max-width: 576px){
+.contacto{
+    display: grid;
+    grid-template-areas: 
+    "datos datos "
+    "formu formu ";
+    grid-template-columns: 2fr 2fr ;
+    grid-template-rows: auto auto;
+    margin: 15px;
+}
+.contacto__formulario{
+    grid-area: formu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+.contacto__datos-horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto__datos{
+    text-align: center;
+    grid-area: datos;
+    width: 100%;
+    height: 390px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+}
+.texto{
+    text-align: center;
+    font-size: 22px;
+    margin: 15px;
+    }
+    .footerContenido{
+        display: grid;
+        grid-template-areas: 
+        "  paginas  "
+        " social  "
+        " maps ";
+        grid-template-columns: 2fr;
+        grid-template-rows: auto ;
+    }
+    .footerContenido__maps{
+        grid-area: maps;
+    }
+    .footerContenido__paginas{
+        grid-area: paginas;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footerContenido__paginas li{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 22px;
+    }
+    .footerContenido__paginas li a {
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+    .footerContenido__social{
+        grid-area: social;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 15px;
+    }
+    .footerContenido__social li{
+        list-style-type: none;
+    }
+    .footerContenido__social li a img{
+        width: 50px;
+        height: 50px;
+    }
 }
