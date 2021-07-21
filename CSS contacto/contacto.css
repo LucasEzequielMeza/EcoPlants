@@ -1,55 +1,106 @@
 /* line 1, ../Final/SCSS contacto/contacto.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 5, ../Final/SCSS contacto/contacto.scss */
 .menu {
   max-height: 80px;
 }
 
-/* line 4, ../Final/SCSS contacto/contacto.scss */
+/* line 8, ../Final/SCSS contacto/contacto.scss */
 .menu img {
   border-radius: 100%;
   max-height: 65px;
 }
 
-/* line 8, ../Final/SCSS contacto/contacto.scss */
-.contacto {
-  margin-top: 15px;
+/* line 12, ../Final/SCSS contacto/contacto.scss */
+.contacto__formulario-nombre {
+  display: inline;
 }
 
-/* line 11, ../Final/SCSS contacto/contacto.scss */
-.contacto__formulario form {
-  display: block;
+/* line 15, ../Final/SCSS contacto/contacto.scss */
+.contacto__formulario-mensaje {
+  width: 100%;
+  height: auto;
 }
 
-/* line 14, ../Final/SCSS contacto/contacto.scss */
-label {
-  display: block;
+/* line 19, ../Final/SCSS contacto/contacto.scss */
+.form-control {
+  margin: 10px;
+  box-shadow: 2px 1px 4px 2px rgba(68, 63, 63, 0.767);
 }
 
-/* line 17, ../Final/SCSS contacto/contacto.scss */
+/* line 23, ../Final/SCSS contacto/contacto.scss */
+.contacto__formu {
+  width: 100%;
+}
+
+/* line 26, ../Final/SCSS contacto/contacto.scss */
 .contacto {
   display: grid;
   grid-template-areas: "datos datos formu formu" "datos datos formu formu";
   grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-template-rows: auto auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-/* line 25, ../Final/SCSS contacto/contacto.scss */
+/* line 38, ../Final/SCSS contacto/contacto.scss */
 .contacto__formulario {
   grid-area: formu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
 }
 
-/* line 28, ../Final/SCSS contacto/contacto.scss */
+/* line 45, ../Final/SCSS contacto/contacto.scss */
+.contacto__datos-horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 50, ../Final/SCSS contacto/contacto.scss */
 .contacto__datos {
+  text-align: center;
   grid-area: datos;
+  width: 800px;
+  height: 390px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
 }
 
-/* line 31, ../Final/SCSS contacto/contacto.scss */
+/* line 59, ../Final/SCSS contacto/contacto.scss */
+.contacto__formulario-boton {
+  text-align: center;
+}
+
+/* line 62, ../Final/SCSS contacto/contacto.scss */
+.contenido__datos-info {
+  margin: 15px;
+}
+
+/* line 65, ../Final/SCSS contacto/contacto.scss */
+.texto {
+  text-align: center;
+  font-size: 22px;
+  margin: 25px;
+}
+
+/* line 70, ../Final/SCSS contacto/contacto.scss */
 footer {
   background: #838080;
   height: auto;
   width: 100%;
 }
 
-/* line 36, ../Final/SCSS contacto/contacto.scss */
+/* line 75, ../Final/SCSS contacto/contacto.scss */
 .footerContenido {
   display: grid;
   grid-template-areas: "  paginas social maps " " paginas social maps ";
@@ -57,13 +108,13 @@ footer {
   grid-template-rows: auto auto auto;
 }
 
-/* line 44, ../Final/SCSS contacto/contacto.scss */
+/* line 83, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__maps {
   grid-area: maps;
   margin: 40px;
 }
 
-/* line 48, ../Final/SCSS contacto/contacto.scss */
+/* line 87, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__paginas {
   width: 300px;
   grid-area: paginas;
@@ -74,20 +125,20 @@ footer {
   margin-left: 100px;
 }
 
-/* line 57, ../Final/SCSS contacto/contacto.scss */
+/* line 96, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__paginas li {
   list-style-type: none;
   text-decoration: none;
   font-size: 22px;
 }
 
-/* line 62, ../Final/SCSS contacto/contacto.scss */
+/* line 101, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__paginas li a {
   text-decoration: none;
   color: #c7c7c7;
 }
 
-/* line 66, ../Final/SCSS contacto/contacto.scss */
+/* line 105, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__social {
   grid-area: social;
   display: flex;
@@ -97,15 +148,104 @@ footer {
   padding: 15px;
 }
 
-/* line 74, ../Final/SCSS contacto/contacto.scss */
+/* line 113, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__social li {
   list-style-type: none;
 }
 
-/* line 77, ../Final/SCSS contacto/contacto.scss */
+/* line 116, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__social li a img {
   width: 50px;
   height: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  /* line 121, ../Final/SCSS contacto/contacto.scss */
+  .contacto {
+    display: grid;
+    grid-template-areas: "datos datos " "formu formu ";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    margin: 15px;
+  }
+  /* line 130, ../Final/SCSS contacto/contacto.scss */
+  .contacto__formulario {
+    grid-area: formu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  /* line 137, ../Final/SCSS contacto/contacto.scss */
+  .contacto__datos-horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 142, ../Final/SCSS contacto/contacto.scss */
+  .contacto__datos {
+    text-align: center;
+    grid-area: datos;
+    width: 100%;
+    height: 390px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  /* line 151, ../Final/SCSS contacto/contacto.scss */
+  .texto {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px;
+  }
+  /* line 156, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido {
+    display: grid;
+    grid-template-areas: "  paginas  " " social  " " maps ";
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+  }
+  /* line 165, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido__maps {
+    grid-area: maps;
+  }
+  /* line 168, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido__paginas {
+    grid-area: paginas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* line 175, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido__paginas li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  /* line 180, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido__paginas li a {
+    text-decoration: none;
+    color: #c7c7c7;
+  }
+  /* line 184, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido__social {
+    grid-area: social;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 15px;
+  }
+  /* line 192, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido__social li {
+    list-style-type: none;
+  }
+  /* line 195, ../Final/SCSS contacto/contacto.scss */
+  .footerContenido__social li a img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /*# sourceMappingURL=contacto.css.map */

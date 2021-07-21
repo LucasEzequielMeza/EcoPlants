@@ -37,9 +37,11 @@
             </nav>
         </header>
         <!--Contenido-->
+        <p class="texto">Hacenos tu consulta o comentario, estamos a disposición para brindar la mejor atencion</p>
         <div class="contacto">
             <div class="contacto__datos">
-                <p>
+                <div class="contenido__datos-info">
+                  <p>
                     <strong>Direccion:</strong> Profesor Aguer 5453, Villa Ballester, Partido de San Martin, Buenos Aires.
                 </p>
                 <p>
@@ -48,35 +50,67 @@
                 <p>
                     <strong>E-mail:</strong> lucasezequiel9720@hotmail.com
                 </p>
+                </div>
+                <div class="contacto__datos-horario">
+                  <p>Nuestros horarios</p>
+                  <table>
+                    <tr>
+                      <td>Lunes</td>
+                      <td>09:00-18:30</td>
+                    </tr>
+                    <tr>
+                      <td>Martes</td>
+                      <td>09:00-18:30</td>
+                    </tr>
+                    <tr>
+                      <td>Miercoes</td>
+                      <td>09:00-18:30</td>
+                    </tr>
+                    <tr>
+                      <td>Jueves</td>
+                      <td>09:00-18:30</td>
+                    </tr>
+                    <tr>
+                      <td>Viernes</td>
+                      <td>09:00-18:30</td>
+                    </tr>
+                    <tr>
+                      <td>Sabado</td>
+                      <td>09:00-14:30</td>
+                    </tr>
+                    <tr>
+                      <td>Domingos</td>
+                      <td>Cerrado</td>
+                    </tr>
+                  </table>
+                </div>
             </div>
             <div class="contacto__formulario">
-                <div class="formulario">
-                    <form>
-                        <label for="nombre">Ingrese su nombre:</label>
-                    <input type="text" placeholder="Nombre" name="nombre" id="nombre">
-                    </form>
-                </div>
-                <div class="formulario">
-                    <form>
-                        <label for="mail">Ingrese su E-mail:</label>
-                        <input type="email" placeholder="E-Mail" name="Mail" id="mail">
-                    </form>
-                </div>
-                <div class="formulario">
-                    <form>
-                        <label for="telefono">Numero telefonico</label>
-                        <input type="number" placeholder="Numero telefonico" name="numero" id="telefono">
-                    </form>
-                </div>
-                <div class="formulario">
-                    <form>
-                        <label for="mensaje">Mensaje (Opcional)</label>
-                        <textarea cols="25" rows="10" id="mensaje"></textarea>
-                    </form>
-                </div>
+                <form class="contacto__formu">
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control contacto__formulario-nombre" placeholder="Nombre">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control contacto__formulario-apellido" placeholder="Apellido">
+                      </div>
+                    </div>
+                  <div class="form-row">
+                      <div class="col">
+                          <input type="email" class="form-control" placeholder="E-mail" id="inputEmail3">
+                        </div>
+                      <div class="col">
+                          <input type="number" class="form-control contacto__formulario-telefono" placeholder="numero telefonico">
+                        </div>
+                  </div>
+                  <textarea  class="form-control contacto__formulario-mensaje"  cols="25" rows="10" id="mensaje" placeholder="Mensaje (Opcional)"></textarea>
+                  <div class="contacto__formulario-boton">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-primary">Borrar</button>
+                  </div>
+                </form>
             </div>
         </div>    
-        <h6 class="texto">Hacenos tu consulta o comentario, estamos a disposición para brindar la mejor atencion</h6>
         <!--footer-->
         <footer>
             <div class="footerContenido">
