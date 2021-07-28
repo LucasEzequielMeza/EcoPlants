@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500;600&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&family=Merienda:wght@400;700&display=swap');
 *{
     margin: 0px;
     padding:0px;
 }
-.banner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 580px;
+body{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
 }
 .banner__img{
     width: 100%;
@@ -19,6 +20,32 @@
 .menu img{
     border-radius: 100%;
     max-height: 65px;
+}
+.navbar-nav{
+    margin-left: 580px;
+}
+li h2 {
+    display: inline;
+    font-size: 18px;
+    font-family: 'Merienda', sans-serif;
+    font-weight: 400;
+}
+li h3 {
+    display: inline;
+    font-size: 18px;
+    font-family: 'Merienda', sans-serif;
+    font-weight: 400;
+}
+.titulo{
+    text-align: center;
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+.titulo__texto{
+    font-family: 'Merienda', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 .nosotros{
     display: flex;

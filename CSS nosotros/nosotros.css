@@ -1,36 +1,73 @@
-/* line 1, ../Final/SCSS nosotros/nosotros.scss */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500;600&family=Marmelad&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&family=Merienda:wght@400;700&display=swap");
+/* line 4, ../Final/SCSS nosotros/nosotros.scss */
 * {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 5, ../Final/SCSS nosotros/nosotros.scss */
-.banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 580px;
+/* line 8, ../Final/SCSS nosotros/nosotros.scss */
+body {
+  font-family: 'Cormorant Upright', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
 }
 
-/* line 12, ../Final/SCSS nosotros/nosotros.scss */
+/* line 13, ../Final/SCSS nosotros/nosotros.scss */
 .banner__img {
   width: 100%;
   height: 580px;
 }
 
-/* line 16, ../Final/SCSS nosotros/nosotros.scss */
+/* line 17, ../Final/SCSS nosotros/nosotros.scss */
 .menu {
   max-height: 80px;
 }
 
-/* line 19, ../Final/SCSS nosotros/nosotros.scss */
+/* line 20, ../Final/SCSS nosotros/nosotros.scss */
 .menu img {
   border-radius: 100%;
   max-height: 65px;
 }
 
-/* line 23, ../Final/SCSS nosotros/nosotros.scss */
+/* line 24, ../Final/SCSS nosotros/nosotros.scss */
+.navbar-nav {
+  margin-left: 580px;
+}
+
+/* line 27, ../Final/SCSS nosotros/nosotros.scss */
+li h2 {
+  display: inline;
+  font-size: 18px;
+  font-family: 'Merienda', sans-serif;
+  font-weight: 400;
+}
+
+/* line 33, ../Final/SCSS nosotros/nosotros.scss */
+li h3 {
+  display: inline;
+  font-size: 18px;
+  font-family: 'Merienda', sans-serif;
+  font-weight: 400;
+}
+
+/* line 39, ../Final/SCSS nosotros/nosotros.scss */
+.titulo {
+  text-align: center;
+  font-family: 'Marmelad', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+/* line 45, ../Final/SCSS nosotros/nosotros.scss */
+.titulo__texto {
+  font-family: 'Merienda', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 50, ../Final/SCSS nosotros/nosotros.scss */
 .nosotros {
   display: flex;
   flex-direction: row;
@@ -38,7 +75,7 @@
   align-items: center;
 }
 
-/* line 29, ../Final/SCSS nosotros/nosotros.scss */
+/* line 56, ../Final/SCSS nosotros/nosotros.scss */
 .nosotros__contenido {
   width: 1650px;
   height: auto;
@@ -49,14 +86,14 @@
   box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
 }
 
-/* line 38, ../Final/SCSS nosotros/nosotros.scss */
+/* line 65, ../Final/SCSS nosotros/nosotros.scss */
 footer {
   background: #838080;
   height: auto;
   width: 100%;
 }
 
-/* line 43, ../Final/SCSS nosotros/nosotros.scss */
+/* line 70, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido {
   display: grid;
   grid-template-areas: "  paginas social maps " " paginas social maps ";
@@ -64,13 +101,13 @@ footer {
   grid-template-rows: auto auto auto;
 }
 
-/* line 51, ../Final/SCSS nosotros/nosotros.scss */
+/* line 78, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__maps {
   grid-area: maps;
   margin: 40px;
 }
 
-/* line 55, ../Final/SCSS nosotros/nosotros.scss */
+/* line 82, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__paginas {
   width: 300px;
   grid-area: paginas;
@@ -81,20 +118,20 @@ footer {
   margin-left: 100px;
 }
 
-/* line 64, ../Final/SCSS nosotros/nosotros.scss */
+/* line 91, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__paginas li {
   list-style-type: none;
   text-decoration: none;
   font-size: 22px;
 }
 
-/* line 69, ../Final/SCSS nosotros/nosotros.scss */
+/* line 96, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__paginas li a {
   text-decoration: none;
   color: #c7c7c7;
 }
 
-/* line 73, ../Final/SCSS nosotros/nosotros.scss */
+/* line 100, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__social {
   grid-area: social;
   display: flex;
@@ -104,24 +141,24 @@ footer {
   padding: 15px;
 }
 
-/* line 81, ../Final/SCSS nosotros/nosotros.scss */
+/* line 108, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__social li {
   list-style-type: none;
 }
 
-/* line 84, ../Final/SCSS nosotros/nosotros.scss */
+/* line 111, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__social li a img {
   width: 50px;
   height: 50px;
 }
 
 @media only screen and (max-width: 576px) {
-  /* line 89, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 116, ../Final/SCSS nosotros/nosotros.scss */
   * {
     margin: 0px;
     padding: 0px;
   }
-  /* line 93, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 120, ../Final/SCSS nosotros/nosotros.scss */
   .banner {
     display: flex;
     flex-direction: column;
@@ -129,28 +166,28 @@ footer {
     width: 576px;
     height: 301px;
   }
-  /* line 100, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 127, ../Final/SCSS nosotros/nosotros.scss */
   .banner__img {
     width: 576px;
     height: 301px;
   }
-  /* line 104, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 131, ../Final/SCSS nosotros/nosotros.scss */
   .nosotros__contenido {
     margin: 9px;
     padding: 3px;
   }
-  /* line 108, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 135, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido {
     display: grid;
     grid-template-areas: "  paginas  " " social  " " maps ";
     grid-template-columns: 2fr;
     grid-template-rows: auto;
   }
-  /* line 117, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 144, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__maps {
     grid-area: maps;
   }
-  /* line 120, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 147, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__paginas {
     grid-area: paginas;
     display: flex;
@@ -158,18 +195,18 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  /* line 127, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 154, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__paginas li {
     list-style-type: none;
     text-decoration: none;
     font-size: 22px;
   }
-  /* line 132, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 159, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__paginas li a {
     text-decoration: none;
     color: #c7c7c7;
   }
-  /* line 136, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 163, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__social {
     grid-area: social;
     display: flex;
@@ -178,11 +215,11 @@ footer {
     margin: 20px;
     padding: 15px;
   }
-  /* line 144, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 171, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__social li {
     list-style-type: none;
   }
-  /* line 147, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 174, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__social li a img {
     width: 50px;
     height: 50px;

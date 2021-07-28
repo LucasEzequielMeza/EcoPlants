@@ -1,43 +1,58 @@
-/* line 1, ../Final/SCSS contacto/contacto.scss */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500;600&family=Marmelad&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&family=Merienda:wght@400;700&display=swap");
+/* line 4, ../Final/SCSS contacto/contacto.scss */
 * {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 5, ../Final/SCSS contacto/contacto.scss */
+/* line 8, ../Final/SCSS contacto/contacto.scss */
+body {
+  font-family: 'Cormorant Upright', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* line 13, ../Final/SCSS contacto/contacto.scss */
 .menu {
   max-height: 80px;
 }
 
-/* line 8, ../Final/SCSS contacto/contacto.scss */
+/* line 16, ../Final/SCSS contacto/contacto.scss */
 .menu img {
   border-radius: 100%;
   max-height: 65px;
 }
 
-/* line 12, ../Final/SCSS contacto/contacto.scss */
+/* line 20, ../Final/SCSS contacto/contacto.scss */
+.navbar-nav {
+  margin-left: 580px;
+}
+
+/* line 23, ../Final/SCSS contacto/contacto.scss */
 .contacto__formulario-nombre {
   display: inline;
 }
 
-/* line 15, ../Final/SCSS contacto/contacto.scss */
+/* line 26, ../Final/SCSS contacto/contacto.scss */
 .contacto__formulario-mensaje {
   width: 100%;
   height: auto;
 }
 
-/* line 19, ../Final/SCSS contacto/contacto.scss */
+/* line 30, ../Final/SCSS contacto/contacto.scss */
 .form-control {
   margin: 10px;
   box-shadow: 2px 1px 4px 2px rgba(68, 63, 63, 0.767);
 }
 
-/* line 23, ../Final/SCSS contacto/contacto.scss */
+/* line 34, ../Final/SCSS contacto/contacto.scss */
 .contacto__formu {
   width: 100%;
 }
 
-/* line 26, ../Final/SCSS contacto/contacto.scss */
+/* line 37, ../Final/SCSS contacto/contacto.scss */
 .contacto {
   display: grid;
   grid-template-areas: "datos datos formu formu" "datos datos formu formu";
@@ -49,7 +64,7 @@
   margin-bottom: 25px;
 }
 
-/* line 38, ../Final/SCSS contacto/contacto.scss */
+/* line 49, ../Final/SCSS contacto/contacto.scss */
 .contacto__formulario {
   grid-area: formu;
   display: flex;
@@ -58,14 +73,17 @@
   width: 800px;
 }
 
-/* line 45, ../Final/SCSS contacto/contacto.scss */
+/* line 56, ../Final/SCSS contacto/contacto.scss */
 .contacto__datos-horario {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Merienda', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-/* line 50, ../Final/SCSS contacto/contacto.scss */
+/* line 64, ../Final/SCSS contacto/contacto.scss */
 .contacto__datos {
   text-align: center;
   grid-area: datos;
@@ -76,31 +94,31 @@
   box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
 }
 
-/* line 59, ../Final/SCSS contacto/contacto.scss */
+/* line 73, ../Final/SCSS contacto/contacto.scss */
 .contacto__formulario-boton {
   text-align: center;
 }
 
-/* line 62, ../Final/SCSS contacto/contacto.scss */
+/* line 76, ../Final/SCSS contacto/contacto.scss */
 .contenido__datos-info {
   margin: 15px;
 }
 
-/* line 65, ../Final/SCSS contacto/contacto.scss */
+/* line 79, ../Final/SCSS contacto/contacto.scss */
 .texto {
   text-align: center;
   font-size: 22px;
   margin: 25px;
 }
 
-/* line 70, ../Final/SCSS contacto/contacto.scss */
+/* line 84, ../Final/SCSS contacto/contacto.scss */
 footer {
   background: #838080;
   height: auto;
   width: 100%;
 }
 
-/* line 75, ../Final/SCSS contacto/contacto.scss */
+/* line 89, ../Final/SCSS contacto/contacto.scss */
 .footerContenido {
   display: grid;
   grid-template-areas: "  paginas social maps " " paginas social maps ";
@@ -108,13 +126,13 @@ footer {
   grid-template-rows: auto auto auto;
 }
 
-/* line 83, ../Final/SCSS contacto/contacto.scss */
+/* line 97, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__maps {
   grid-area: maps;
   margin: 40px;
 }
 
-/* line 87, ../Final/SCSS contacto/contacto.scss */
+/* line 101, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__paginas {
   width: 300px;
   grid-area: paginas;
@@ -125,20 +143,20 @@ footer {
   margin-left: 100px;
 }
 
-/* line 96, ../Final/SCSS contacto/contacto.scss */
+/* line 110, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__paginas li {
   list-style-type: none;
   text-decoration: none;
   font-size: 22px;
 }
 
-/* line 101, ../Final/SCSS contacto/contacto.scss */
+/* line 115, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__paginas li a {
   text-decoration: none;
   color: #c7c7c7;
 }
 
-/* line 105, ../Final/SCSS contacto/contacto.scss */
+/* line 119, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__social {
   grid-area: social;
   display: flex;
@@ -148,19 +166,19 @@ footer {
   padding: 15px;
 }
 
-/* line 113, ../Final/SCSS contacto/contacto.scss */
+/* line 127, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__social li {
   list-style-type: none;
 }
 
-/* line 116, ../Final/SCSS contacto/contacto.scss */
+/* line 130, ../Final/SCSS contacto/contacto.scss */
 .footerContenido__social li a img {
   width: 50px;
   height: 50px;
 }
 
 @media only screen and (max-width: 576px) {
-  /* line 121, ../Final/SCSS contacto/contacto.scss */
+  /* line 135, ../Final/SCSS contacto/contacto.scss */
   .contacto {
     display: grid;
     grid-template-areas: "datos datos " "formu formu ";
@@ -168,7 +186,7 @@ footer {
     grid-template-rows: auto auto;
     margin: 15px;
   }
-  /* line 130, ../Final/SCSS contacto/contacto.scss */
+  /* line 144, ../Final/SCSS contacto/contacto.scss */
   .contacto__formulario {
     grid-area: formu;
     display: flex;
@@ -176,13 +194,13 @@ footer {
     align-items: center;
     width: 95%;
   }
-  /* line 137, ../Final/SCSS contacto/contacto.scss */
+  /* line 151, ../Final/SCSS contacto/contacto.scss */
   .contacto__datos-horario {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  /* line 142, ../Final/SCSS contacto/contacto.scss */
+  /* line 156, ../Final/SCSS contacto/contacto.scss */
   .contacto__datos {
     text-align: center;
     grid-area: datos;
@@ -192,24 +210,24 @@ footer {
     border: solid #dfe2e09a 3px;
     box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
   }
-  /* line 151, ../Final/SCSS contacto/contacto.scss */
+  /* line 165, ../Final/SCSS contacto/contacto.scss */
   .texto {
     text-align: center;
     font-size: 22px;
     margin: 15px;
   }
-  /* line 156, ../Final/SCSS contacto/contacto.scss */
+  /* line 170, ../Final/SCSS contacto/contacto.scss */
   .footerContenido {
     display: grid;
     grid-template-areas: "  paginas  " " social  " " maps ";
     grid-template-columns: 2fr;
     grid-template-rows: auto;
   }
-  /* line 165, ../Final/SCSS contacto/contacto.scss */
+  /* line 179, ../Final/SCSS contacto/contacto.scss */
   .footerContenido__maps {
     grid-area: maps;
   }
-  /* line 168, ../Final/SCSS contacto/contacto.scss */
+  /* line 182, ../Final/SCSS contacto/contacto.scss */
   .footerContenido__paginas {
     grid-area: paginas;
     display: flex;
@@ -217,18 +235,18 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  /* line 175, ../Final/SCSS contacto/contacto.scss */
+  /* line 189, ../Final/SCSS contacto/contacto.scss */
   .footerContenido__paginas li {
     list-style-type: none;
     text-decoration: none;
     font-size: 22px;
   }
-  /* line 180, ../Final/SCSS contacto/contacto.scss */
+  /* line 194, ../Final/SCSS contacto/contacto.scss */
   .footerContenido__paginas li a {
     text-decoration: none;
     color: #c7c7c7;
   }
-  /* line 184, ../Final/SCSS contacto/contacto.scss */
+  /* line 198, ../Final/SCSS contacto/contacto.scss */
   .footerContenido__social {
     grid-area: social;
     display: flex;
@@ -237,11 +255,11 @@ footer {
     margin: 20px;
     padding: 15px;
   }
-  /* line 192, ../Final/SCSS contacto/contacto.scss */
+  /* line 206, ../Final/SCSS contacto/contacto.scss */
   .footerContenido__social li {
     list-style-type: none;
   }
-  /* line 195, ../Final/SCSS contacto/contacto.scss */
+  /* line 209, ../Final/SCSS contacto/contacto.scss */
   .footerContenido__social li a img {
     width: 50px;
     height: 50px;

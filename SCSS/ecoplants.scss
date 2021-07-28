@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500;600&family=Marmelad&display=swap');
 *{
     margin: 0px;
     padding: 0px;
+}
+body{
+    font-family: 'Cormorant Upright', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.card-title{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+.contenido__informacion-titulo{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
 }
 .plantas{
     display: grid;
@@ -35,6 +52,9 @@
     margin-bottom: 15px;
     background: rgb(207,207,206);
     background: linear-gradient(180deg, rgba(207,207,206,1) 0%, rgba(234,234,234,1) 42%, rgba(255,254,254,1) 70%);
+  }
+  .navbar-nav{
+      margin-left: 580px;
   }
 .menu{
     max-height: 80px;
@@ -207,6 +227,9 @@ footer{
     .plantas{
         margin: 40px;
         align-items: center;
+    }
+    .navbar-nav{
+        margin: auto;
     }
     .card{
         margin: 8px;
