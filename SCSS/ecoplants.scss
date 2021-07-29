@@ -182,7 +182,7 @@ footer{
     padding: 8px;
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
     *{
         margin: 0px;
         padding: 0px;
@@ -190,14 +190,14 @@ footer{
     .plantas{
         display: grid;
         grid-template-areas: 
-        "cactus cactus"
-        "rosas rosas"
-        "pino pino"
-        "estrella estrella"
-        "suculentas suculentas"
-        "clavel clavel";
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: auto auto;
+        " . cactus . "
+        " . rosas . "
+        " . pino . "
+        " . estrella . "
+        " . suculentas . "
+        " . clavel . ";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto auto;
     }
     .plantas__cactus{
         grid-area: cactus;
@@ -228,6 +228,23 @@ footer{
         margin: 40px;
         align-items: center;
     }
+    .carrusel{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .carousel-control-prev{
+        height: 40px;
+        margin: auto;
+    }
+    .carousel-control-next{
+        height: 40px;
+        margin: auto;
+    }
+    ul .navbar-nav {
+        z-index: 1;
+      }
     .navbar-nav{
         margin: auto;
     }
@@ -260,11 +277,11 @@ footer{
     .footerContenido{
         display: grid;
         grid-template-areas: 
-        "  paginas  "
-        " social  "
-        " maps ";
-        grid-template-columns: 2fr;
-        grid-template-rows: auto ;
+        " . paginas .  "
+        " . social . "
+        " . maps . ";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto auto ;
     }
     .footerContenido__maps{
         grid-area: maps;
@@ -301,4 +318,149 @@ footer{
         height: 50px;
     }
 
+}
+@media only screen and (max-width: 375px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .plantas{
+        display: grid;
+        grid-template-areas: 
+        " cactus  "
+        "  rosas  "
+        "  pino  "
+        "  estrella  "
+        "  suculentas  "
+        "  clavel  ";
+        grid-template-columns: 2fr ;
+        grid-template-rows: auto ;
+    }
+    .plantas__cactus{
+        grid-area: cactus;
+    }
+    .plantas__rosas{
+        grid-area: rosas;
+    }
+    .plantas__pinolimon{
+        grid-area: pino;
+    }
+    .plantas__estrella{
+        grid-area: estrella;
+    }
+    .plantas__suculentas{
+        grid-area: suculentas;
+    }
+    .plantas__clavel{
+        grid-area: clavel;
+    }
+    .menu{
+        max-height: 80px;
+    }
+    .menu img{
+        border-radius: 100%;
+        max-height: 65px;
+    }
+    .plantas{
+        margin: 40px;
+        align-items: center;
+    }
+    .carrusel{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .carousel-control-prev{
+        width: 15px;
+        height: 20px;
+        margin: auto;
+    }
+    .carousel-control-next{
+        height: 20px;
+        width: 15px;
+        margin: auto;
+    }
+    ul .navbar-nav {
+        z-index: 1;
+      }
+    .navbar-nav{
+        margin: auto;
+    }
+    .card{
+        margin: 8px;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .contenido__informacion{
+        text-align: center;
+        width: 99%;
+        height: auto;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    .contenido__informacion-titulo{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .contenido__informacion-texto{
+        margin: 5px;
+        padding: 5px;
+    }
+    .footerContenido{
+        display: grid;
+        grid-template-areas: 
+        " . paginas .  "
+        " . social . "
+        " . maps . ";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto auto ;
+    }
+    .footerContenido__maps{
+        grid-area: maps;
+        width: 280px;
+        height: auto;
+    }
+    .footerContenido__maps-mapa{
+        width: 100%;
+        height: auto;
+    }
+    .footerContenido__paginas{
+        grid-area: paginas;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 220px;
+        height: auto;
+    }
+    .footerContenido__paginas li{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .footerContenido__paginas li a {
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+    .footerContenido__social{
+        grid-area: social;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    .footerContenido__social li{
+        list-style-type: none;
+    }
+    .footerContenido__social li a img{
+        width: 50px;
+        height: 50px;
+    }
 }

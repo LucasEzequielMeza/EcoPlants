@@ -140,7 +140,10 @@ footer{
     width: 50px;
     height: 50px;
 }
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 768px){
+    .navbar-nav{
+        margin: auto;
+    }
     .productos{
         display: flex;
         flex-direction: column;
@@ -209,8 +212,8 @@ footer{
         grid-area: pala;
     }
     .card{
-        width: 220px;
-        height: 320px;
+        width: 200px;
+        height: 300px;
         margin: 25px;
     }
     .card img{
@@ -283,11 +286,11 @@ footer{
     .footerContenido{
         display: grid;
         grid-template-areas: 
-        "  paginas  "
-        " social  "
-        " maps ";
-        grid-template-columns: 2fr;
-        grid-template-rows: auto ;
+        " . paginas . "
+        " . social . "
+        " . maps . ";
+        grid-template-columns: 1fr 4fr 1fr ;
+        grid-template-rows: auto auto auto;
     }
     .footerContenido__maps{
         grid-area: maps;
@@ -315,6 +318,129 @@ footer{
         justify-content: space-between;
         margin: 20px;
         padding: 15px;
+    }
+    .footerContenido__social li{
+        list-style-type: none;
+    }
+    .footerContenido__social li a img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .card{
+        width: 280px;
+        height: 380px;
+        margin: 15px;
+    }
+    .productos__plantas{
+        display: grid;
+        grid-template-areas: 
+        "cactus"
+        "estrella"
+        "rosas"
+        "suculentas";
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+    }
+    .cactus{
+        grid-area: cactus;
+    }
+    .estrella{
+        grid-area: estrella;
+    }
+    .rosas{
+        grid-area: rosas;
+    }
+    .suculentas{
+        grid-area: suculentas;
+    }
+    .productos__macetas{
+        display: grid;
+        grid-template-areas: 
+        "artesanal"
+        "plastico"
+        "cemento"
+        "ceramica";
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+    }
+    .artesanal{
+        grid-area: artesanal;
+    }
+    .plastico{
+        grid-area: plastico;
+    }
+    .cemento{
+        grid-area: cemento;
+    }
+    .ceramica{
+        grid-area: ceramica;
+    }
+    .productos__jardineria{
+        display: grid;
+        grid-template-areas: 
+        "insecti"
+        "tierra"
+        "mangue"
+        "pala";
+        grid-template-rows: auto;
+        grid-template-columns: 2fr;
+    }
+    .insecticida{
+        grid-area: insecti;
+    }
+    .tierra{
+        grid-area: tierra;
+    }
+    .manguera{
+        grid-area: mangue;
+    }
+    .pala{
+        grid-area: pala;
+    }
+    .footerContenido{
+        display: grid;
+        grid-template-areas: 
+        " . paginas .  "
+        " . social . "
+        " . maps . ";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto auto ;
+    }
+    .footerContenido__maps{
+        grid-area: maps;
+        width: 280px;
+        height: auto;
+    }
+    .footerContenido__maps-mapa{
+        width: 100%;
+        height: auto;
+    }
+    .footerContenido__paginas{
+        grid-area: paginas;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 220px;
+        height: auto;
+    }
+    .footerContenido__paginas li{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .footerContenido__paginas li a {
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+    .footerContenido__social{
+        grid-area: social;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
     }
     .footerContenido__social li{
         list-style-type: none;

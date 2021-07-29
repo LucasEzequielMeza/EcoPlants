@@ -248,7 +248,7 @@ footer {
   padding: 8px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   /* line 186, ../Final/scss/ecoplants.scss */
   * {
     margin: 0px;
@@ -257,9 +257,9 @@ footer {
   /* line 190, ../Final/scss/ecoplants.scss */
   .plantas {
     display: grid;
-    grid-template-areas: "cactus cactus" "rosas rosas" "pino pino" "estrella estrella" "suculentas suculentas" "clavel clavel";
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: auto auto;
+    grid-template-areas: " . cactus . " " . rosas . " " . pino . " " . estrella . " " . suculentas . " " . clavel . ";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
   }
   /* line 202, ../Final/scss/ecoplants.scss */
   .plantas__cactus {
@@ -300,14 +300,35 @@ footer {
     align-items: center;
   }
   /* line 231, ../Final/scss/ecoplants.scss */
+  .carrusel {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 237, ../Final/scss/ecoplants.scss */
+  .carousel-control-prev {
+    height: 40px;
+    margin: auto;
+  }
+  /* line 241, ../Final/scss/ecoplants.scss */
+  .carousel-control-next {
+    height: 40px;
+    margin: auto;
+  }
+  /* line 245, ../Final/scss/ecoplants.scss */
+  ul .navbar-nav {
+    z-index: 1;
+  }
+  /* line 248, ../Final/scss/ecoplants.scss */
   .navbar-nav {
     margin: auto;
   }
-  /* line 234, ../Final/scss/ecoplants.scss */
+  /* line 251, ../Final/scss/ecoplants.scss */
   .card {
     margin: 8px;
   }
-  /* line 237, ../Final/scss/ecoplants.scss */
+  /* line 254, ../Final/scss/ecoplants.scss */
   .contenido {
     display: flex;
     flex-direction: row;
@@ -315,7 +336,7 @@ footer {
     justify-content: space-between;
     margin: 10px;
   }
-  /* line 244, ../Final/scss/ecoplants.scss */
+  /* line 261, ../Final/scss/ecoplants.scss */
   .contenido__informacion {
     text-align: center;
     width: 99%;
@@ -324,28 +345,28 @@ footer {
     border: solid #dfe2e09a 3px;
     box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
   }
-  /* line 252, ../Final/scss/ecoplants.scss */
+  /* line 269, ../Final/scss/ecoplants.scss */
   .contenido__informacion-titulo {
     margin-top: 7px;
     margin-bottom: 7px;
   }
-  /* line 256, ../Final/scss/ecoplants.scss */
+  /* line 273, ../Final/scss/ecoplants.scss */
   .contenido__informacion-texto {
     margin: 5px;
     padding: 5px;
   }
-  /* line 260, ../Final/scss/ecoplants.scss */
+  /* line 277, ../Final/scss/ecoplants.scss */
   .footerContenido {
     display: grid;
-    grid-template-areas: "  paginas  " " social  " " maps ";
-    grid-template-columns: 2fr;
-    grid-template-rows: auto;
+    grid-template-areas: " . paginas .  " " . social . " " . maps . ";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
   }
-  /* line 269, ../Final/scss/ecoplants.scss */
+  /* line 286, ../Final/scss/ecoplants.scss */
   .footerContenido__maps {
     grid-area: maps;
   }
-  /* line 272, ../Final/scss/ecoplants.scss */
+  /* line 289, ../Final/scss/ecoplants.scss */
   .footerContenido__paginas {
     grid-area: paginas;
     display: flex;
@@ -353,18 +374,18 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  /* line 279, ../Final/scss/ecoplants.scss */
+  /* line 296, ../Final/scss/ecoplants.scss */
   .footerContenido__paginas li {
     list-style-type: none;
     text-decoration: none;
     font-size: 22px;
   }
-  /* line 284, ../Final/scss/ecoplants.scss */
+  /* line 301, ../Final/scss/ecoplants.scss */
   .footerContenido__paginas li a {
     text-decoration: none;
     color: #c7c7c7;
   }
-  /* line 288, ../Final/scss/ecoplants.scss */
+  /* line 305, ../Final/scss/ecoplants.scss */
   .footerContenido__social {
     grid-area: social;
     display: flex;
@@ -373,11 +394,178 @@ footer {
     margin: 20px;
     padding: 15px;
   }
-  /* line 296, ../Final/scss/ecoplants.scss */
+  /* line 313, ../Final/scss/ecoplants.scss */
   .footerContenido__social li {
     list-style-type: none;
   }
-  /* line 299, ../Final/scss/ecoplants.scss */
+  /* line 316, ../Final/scss/ecoplants.scss */
+  .footerContenido__social li a img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /* line 323, ../Final/scss/ecoplants.scss */
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  /* line 327, ../Final/scss/ecoplants.scss */
+  .plantas {
+    display: grid;
+    grid-template-areas: " cactus  " "  rosas  " "  pino  " "  estrella  " "  suculentas  " "  clavel  ";
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+  }
+  /* line 339, ../Final/scss/ecoplants.scss */
+  .plantas__cactus {
+    grid-area: cactus;
+  }
+  /* line 342, ../Final/scss/ecoplants.scss */
+  .plantas__rosas {
+    grid-area: rosas;
+  }
+  /* line 345, ../Final/scss/ecoplants.scss */
+  .plantas__pinolimon {
+    grid-area: pino;
+  }
+  /* line 348, ../Final/scss/ecoplants.scss */
+  .plantas__estrella {
+    grid-area: estrella;
+  }
+  /* line 351, ../Final/scss/ecoplants.scss */
+  .plantas__suculentas {
+    grid-area: suculentas;
+  }
+  /* line 354, ../Final/scss/ecoplants.scss */
+  .plantas__clavel {
+    grid-area: clavel;
+  }
+  /* line 357, ../Final/scss/ecoplants.scss */
+  .menu {
+    max-height: 80px;
+  }
+  /* line 360, ../Final/scss/ecoplants.scss */
+  .menu img {
+    border-radius: 100%;
+    max-height: 65px;
+  }
+  /* line 364, ../Final/scss/ecoplants.scss */
+  .plantas {
+    margin: 40px;
+    align-items: center;
+  }
+  /* line 368, ../Final/scss/ecoplants.scss */
+  .carrusel {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 374, ../Final/scss/ecoplants.scss */
+  .carousel-control-prev {
+    width: 15px;
+    height: 20px;
+    margin: auto;
+  }
+  /* line 379, ../Final/scss/ecoplants.scss */
+  .carousel-control-next {
+    height: 20px;
+    width: 15px;
+    margin: auto;
+  }
+  /* line 384, ../Final/scss/ecoplants.scss */
+  ul .navbar-nav {
+    z-index: 1;
+  }
+  /* line 387, ../Final/scss/ecoplants.scss */
+  .navbar-nav {
+    margin: auto;
+  }
+  /* line 390, ../Final/scss/ecoplants.scss */
+  .card {
+    margin: 8px;
+  }
+  /* line 393, ../Final/scss/ecoplants.scss */
+  .contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  /* line 400, ../Final/scss/ecoplants.scss */
+  .contenido__informacion {
+    text-align: center;
+    width: 99%;
+    height: auto;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  /* line 408, ../Final/scss/ecoplants.scss */
+  .contenido__informacion-titulo {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  /* line 412, ../Final/scss/ecoplants.scss */
+  .contenido__informacion-texto {
+    margin: 5px;
+    padding: 5px;
+  }
+  /* line 416, ../Final/scss/ecoplants.scss */
+  .footerContenido {
+    display: grid;
+    grid-template-areas: " . paginas .  " " . social . " " . maps . ";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  /* line 425, ../Final/scss/ecoplants.scss */
+  .footerContenido__maps {
+    grid-area: maps;
+    width: 280px;
+    height: auto;
+  }
+  /* line 430, ../Final/scss/ecoplants.scss */
+  .footerContenido__maps-mapa {
+    width: 100%;
+    height: auto;
+  }
+  /* line 434, ../Final/scss/ecoplants.scss */
+  .footerContenido__paginas {
+    grid-area: paginas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    height: auto;
+  }
+  /* line 443, ../Final/scss/ecoplants.scss */
+  .footerContenido__paginas li {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  /* line 448, ../Final/scss/ecoplants.scss */
+  .footerContenido__paginas li a {
+    text-decoration: none;
+    color: #c7c7c7;
+  }
+  /* line 452, ../Final/scss/ecoplants.scss */
+  .footerContenido__social {
+    grid-area: social;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+  }
+  /* line 459, ../Final/scss/ecoplants.scss */
+  .footerContenido__social li {
+    list-style-type: none;
+  }
+  /* line 462, ../Final/scss/ecoplants.scss */
   .footerContenido__social li a img {
     width: 50px;
     height: 50px;
