@@ -166,6 +166,11 @@ footer {
   margin: 40px;
 }
 
+.footerContenido__maps iframe {
+  width: 350px;
+  height: 200px;
+}
+
 .footerContenido__paginas {
   width: 300px;
   grid-area: paginas;
@@ -176,33 +181,47 @@ footer {
   margin-left: 100px;
 }
 
-.footerContenido__paginas li {
+.footerContenido__paginas-normales li {
   list-style-type: none;
-  text-decoration: none;
   font-size: 22px;
 }
 
-.footerContenido__paginas li a {
+.footerContenido__paginas-normales li a {
   text-decoration: none;
   color: #c7c7c7;
 }
 
-.footerContenido__social {
+.footerContenido__paginas-plantas li {
+  list-style-type: none;
+  font-size: 22px;
+}
+
+.footerContenido__paginas-plantas li a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+.contenido__paginas {
   grid-area: social;
+}
+
+.contenido__paginas-social {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 20px;
   padding: 15px;
 }
 
-.footerContenido__social li {
+.contenido__paginas-social li {
   list-style-type: none;
 }
 
-.footerContenido__social li a img {
+.contenido__paginas-social li img {
   width: 50px;
   height: 50px;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -262,13 +281,6 @@ footer {
   .informacion__titulo {
     text-align: center;
   }
-  .menu {
-    max-height: 80px;
-  }
-  .menu img {
-    border-radius: 100%;
-    max-height: 65px;
-  }
   .informacion__img {
     max-width: 400px;
     max-height: auto;
@@ -318,43 +330,37 @@ footer {
   }
   .footerContenido {
     display: grid;
-    grid-template-areas: " . paginas . " " . social . " " . maps . ";
+    grid-template-areas: ". paginas ." ". social ." ". maps .";
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: auto auto auto;
   }
   .footerContenido__maps {
     grid-area: maps;
+    margin: 5px;
   }
-  .footerContenido__paginas {
-    grid-area: paginas;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .footerContenido__maps iframe {
+    width: 100%;
+    height: auto;
   }
-  .footerContenido__paginas li {
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 22px;
+  .footerContenido__paginas-normales li {
+    font-size: 24px;
   }
-  .footerContenido__paginas li a {
+  .footerContenido__paginas-plantas li {
+    font-size: 24px;
+  }
+  .footerContenido__paginas-plantas li a {
     text-decoration: none;
     color: #c7c7c7;
   }
-  .footerContenido__social {
+  .contenido__paginas {
     grid-area: social;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  }
+  .contenido__paginas-social {
+    margin: 10px;
+    padding: 8px;
+  }
+  .contenido__paginas-social li img {
     margin: 20px;
-    padding: 15px;
-  }
-  .footerContenido__social li {
-    list-style-type: none;
-  }
-  .footerContenido__social li a img {
-    width: 50px;
-    height: 50px;
   }
 }
 
@@ -382,51 +388,10 @@ footer {
     margin: 15px;
     padding: 6px;
   }
-  .footerContenido {
-    display: grid;
-    grid-template-areas: " . paginas .  " " . social . " " . maps . ";
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
-  .footerContenido__maps {
-    grid-area: maps;
-    width: 280px;
-    height: auto;
-  }
-  .footerContenido__maps-mapa {
-    width: 100%;
-    height: auto;
-  }
   .footerContenido__paginas {
-    grid-area: paginas;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 220px;
-    height: auto;
-  }
-  .footerContenido__paginas li {
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  .footerContenido__paginas li a {
-    text-decoration: none;
-    color: #c7c7c7;
-  }
-  .footerContenido__social {
-    grid-area: social;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px;
-  }
-  .footerContenido__social li {
-    list-style-type: none;
-  }
-  .footerContenido__social li a img {
-    width: 50px;
-    height: 50px;
+    width: 240px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-right: 25px;
   }
 }

@@ -108,6 +108,12 @@ footer {
 }
 
 /* line 82, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__maps iframe {
+  width: 350px;
+  height: 200px;
+}
+
+/* line 86, ../Final/SCSS nosotros/nosotros.scss */
 .footerContenido__paginas {
   width: 300px;
   grid-area: paginas;
@@ -118,166 +124,129 @@ footer {
   margin-left: 100px;
 }
 
-/* line 91, ../Final/SCSS nosotros/nosotros.scss */
-.footerContenido__paginas li {
+/* line 95, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__paginas-normales li {
   list-style-type: none;
-  text-decoration: none;
   font-size: 22px;
 }
 
-/* line 96, ../Final/SCSS nosotros/nosotros.scss */
-.footerContenido__paginas li a {
+/* line 99, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__paginas-normales li a {
   text-decoration: none;
   color: #c7c7c7;
 }
 
-/* line 100, ../Final/SCSS nosotros/nosotros.scss */
-.footerContenido__social {
+/* line 103, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__paginas-plantas li {
+  list-style-type: none;
+  font-size: 22px;
+}
+
+/* line 107, ../Final/SCSS nosotros/nosotros.scss */
+.footerContenido__paginas-plantas li a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+/* line 111, ../Final/SCSS nosotros/nosotros.scss */
+.contenido__paginas {
   grid-area: social;
+}
+
+/* line 114, ../Final/SCSS nosotros/nosotros.scss */
+.contenido__paginas-social {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin: 20px;
   padding: 15px;
 }
 
-/* line 108, ../Final/SCSS nosotros/nosotros.scss */
-.footerContenido__social li {
+/* line 122, ../Final/SCSS nosotros/nosotros.scss */
+.contenido__paginas-social li {
   list-style-type: none;
 }
 
-/* line 111, ../Final/SCSS nosotros/nosotros.scss */
-.footerContenido__social li a img {
+/* line 125, ../Final/SCSS nosotros/nosotros.scss */
+.contenido__paginas-social li img {
   width: 50px;
   height: 50px;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 116, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 131, ../Final/SCSS nosotros/nosotros.scss */
   * {
     margin: 0px;
     padding: 0px;
   }
-  /* line 120, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 135, ../Final/SCSS nosotros/nosotros.scss */
   .navbar-nav {
     margin: auto;
   }
-  /* line 123, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 138, ../Final/SCSS nosotros/nosotros.scss */
   .nosotros__contenido {
     margin: 25px;
     padding: 13px;
   }
-  /* line 127, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 142, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido {
     display: grid;
-    grid-template-areas: " . paginas . " " . social . " " . maps . ";
+    grid-template-areas: ". paginas ." ". social ." ". maps .";
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: auto auto auto;
   }
-  /* line 136, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 151, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__maps {
     grid-area: maps;
+    margin: 5px;
   }
-  /* line 139, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__paginas {
-    grid-area: paginas;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  /* line 155, ../Final/SCSS nosotros/nosotros.scss */
+  .footerContenido__maps iframe {
+    width: 100%;
+    height: auto;
   }
-  /* line 146, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__paginas li {
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 22px;
+  /* line 159, ../Final/SCSS nosotros/nosotros.scss */
+  .footerContenido__paginas-normales li {
+    font-size: 24px;
   }
-  /* line 151, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__paginas li a {
+  /* line 162, ../Final/SCSS nosotros/nosotros.scss */
+  .footerContenido__paginas-plantas li {
+    font-size: 24px;
+  }
+  /* line 165, ../Final/SCSS nosotros/nosotros.scss */
+  .footerContenido__paginas-plantas li a {
     text-decoration: none;
     color: #c7c7c7;
   }
-  /* line 155, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__social {
+  /* line 169, ../Final/SCSS nosotros/nosotros.scss */
+  .contenido__paginas {
     grid-area: social;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  }
+  /* line 172, ../Final/SCSS nosotros/nosotros.scss */
+  .contenido__paginas-social {
+    margin: 10px;
+    padding: 8px;
+  }
+  /* line 176, ../Final/SCSS nosotros/nosotros.scss */
+  .contenido__paginas-social li img {
     margin: 20px;
-    padding: 15px;
-  }
-  /* line 163, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__social li {
-    list-style-type: none;
-  }
-  /* line 166, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__social li a img {
-    width: 50px;
-    height: 50px;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  /* line 172, ../Final/SCSS nosotros/nosotros.scss */
+  /* line 181, ../Final/SCSS nosotros/nosotros.scss */
   .nosotros__contenido {
     margin: 15px;
     padding: 8px;
   }
-  /* line 176, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido {
-    display: grid;
-    grid-template-areas: " . paginas .  " " . social . " " . maps . ";
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
   /* line 185, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__maps {
-    grid-area: maps;
-    width: 280px;
-    height: auto;
-  }
-  /* line 190, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__maps-mapa {
-    width: 100%;
-    height: auto;
-  }
-  /* line 194, ../Final/SCSS nosotros/nosotros.scss */
   .footerContenido__paginas {
-    grid-area: paginas;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 220px;
-    height: auto;
-  }
-  /* line 203, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__paginas li {
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  /* line 208, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__paginas li a {
-    text-decoration: none;
-    color: #c7c7c7;
-  }
-  /* line 212, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__social {
-    grid-area: social;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px;
-  }
-  /* line 219, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__social li {
-    list-style-type: none;
-  }
-  /* line 222, ../Final/SCSS nosotros/nosotros.scss */
-  .footerContenido__social li a img {
-    width: 50px;
-    height: 50px;
+    width: 240px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-right: 25px;
   }
 }
 

@@ -42,7 +42,12 @@
         <div class="banner">
             <div></div>
             <div class="banner__img">
-                <img src="../Media/Imagenes/Estrella/banner.jpg" alt="banner">
+                <picture>
+                    <source srcset="../Media/Imagenes/Estrella/banner.jpg"  media="(min-width: 1200px)">
+                    <source srcset="../Media/Imagenes/Estrella/banner_responsive.jpg"  media="(min-width: 760px)">
+                    <source srcset="../Media/Imagenes/Estrella/banner_movil.jpg"  media="(min-width: 370px)">
+                    <img src="../Media/Imagenes/Estrella/banner.jpg" alt="banner">
+                </picture>
             </div>
             <div></div>
         </div>
@@ -60,7 +65,12 @@
                      </p>
                 </div>
                 <div class="informacion__riego-img">
-                    <img class="informacion__img" src="../Media/Imagenes/Estrella/hoja_rojo_agua_gotas_regado.jpg" alt="Estrella Federal agua regado">
+                    <picture>
+                        <source srcset="../Media/Imagenes/Estrella/hoja_rojo_agua_gotas_regado.jpg"  media="(min-width: 1200px)">
+                        <source srcset="../Media/Imagenes/Estrella/hoja_rojo_agua_gotas_regado_responsive.jpg"  media="(min-width: 760px)">
+                        <source srcset="../Media/Imagenes/Estrella/hoja_rojo_agua_gotas_regado_movil.jpg"  media="(min-width: 370px)">
+                        <img class="informacion__img" src="../Media/Imagenes/Estrella/hoja_rojo_agua_gotas_regado.jpg" alt="Estrella Federal agua regado">
+                    </picture>
                 </div>
             </div>
             <div class="informacion__luz">
@@ -73,7 +83,12 @@
                     </p>
                 </div>
                 <div class="informacion__luz-img">
-                    <img class="informacion__img" src="../Media/Imagenes/Estrella/planta_madera_maceta_roja_cuidados.jpg" alt="Planta cuidado estrella federal">
+                    <picture>
+                        <source srcset="../Media/Imagenes/Estrella/planta_madera_maceta_roja_cuidados.jpg"  media="(min-width: 1200px)">
+                        <source srcset="../Media/Imagenes/Estrella/planta_madera_maceta_roja_cuidados_responsive.jpg" media="(min-width: 760px)">
+                        <source srcset="../Media/Imagenes/Estrella/planta_madera_maceta_roja_cuidados_movil.jpg"  media="(min-width: 370px)">
+                        <img class="informacion__img" src="../Media/Imagenes/Estrella/planta_madera_maceta_roja_cuidados.jpg" alt="Planta cuidado estrella federal">
+                    </picture>
                 </div>
             </div>
             <div class="informacion__transplante">
@@ -86,7 +101,12 @@
                      </p>
                 </div>
                 <div class="informacion__transplante-img">
-                    <img class="informacion__img" src="../Media/Imagenes/Estrella/tierra_planta_maceta_pala_transplante.jpg" alt="Transplante tierra">
+                    <picture>
+                        <source srcset="../Media/Imagenes/Estrella/tierra_planta_maceta_pala_transplante.jpg"  media="(min-width: 1200px)">
+                        <source srcset="../Media/Imagenes/Estrella/tierra_planta_maceta_pala_transplante_responsive.jpg"  media="(min-width: 760px)">
+                        <source srcset="../Media/Imagenes/Estrella/tierra_planta_maceta_pala_transplante_movil.jpg"  media="(min-width: 370px)">
+                        <img class="informacion__img" src="../Media/Imagenes/Estrella/tierra_planta_maceta_pala_transplante.jpg" alt="Transplante tierra">
+                    </picture>
                 </div>
             </div>
             <div class="informacion__abono">
@@ -99,7 +119,12 @@
                     </p>
                 </div>
                 <div class="informacion__abono-img">
-                    <img class="informacion__img" src="../Media/Imagenes/Estrella/manos_guantes_tierra_abono.jpg" alt="Abono tierra flor">
+                    <picture>
+                        <source srcset="../Media/Imagenes/Estrella/manos_guantes_tierra_abono.jpg"  media="(min-width: 1200px)">
+                        <source srcset="../Media/Imagenes/Estrella/manos_guantes_tierra_abono_responsive.jpg"  media="(min-width: 760px)">
+                        <source srcset="../Media/Imagenes/Estrella/manos_guantes_tierra_abono_movil.jpg"  media="(min-width: 370px)">
+                        <img class="informacion__img" src="../Media/Imagenes/Estrella/manos_guantes_tierra_abono.jpg" alt="Abono tierra flor">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -107,34 +132,37 @@
         <footer>
             <div class="footerContenido">
               <div class="footerContenido__paginas">
-                <div class="paginas__normales">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="../Productos/productos.html">Productos</a></li>
-                  <li><a href="../nosotros.html">Nosotros</a></li>
-                  <li><a href="../contacto.html">Contacto</a></li>
+                  <ul class="footerContenido__paginas-normales">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Productos/productos.html">Productos</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                  </ul>
+                  <ul class="footerContenido__paginas-plantas">
+                    <li><a href="../Plantas/cactus.html">Cactus</a></li>
+                    <li><a href="../Plantas/rosas.html">Rosas</a></li>
+                    <li><a href="../Plantas/pino.html">Pino Limon</a></li>
+                    <li><a href="../Plantas/estrella.html">Estrella Federal</a></li>
+                    <li><a href="../Plantas/suculentas.html">Suculentas</a></li>
+                    <li><a href="../Plantas/clavel.html">Clavel</a></li>
+                  </ul>
                 </div>
-                <div class="paginas__plantas">
-                  <li><a href="../Plantas/cactus.html">Cactus</a></li>
-                  <li><a href="../Plantas/rosas.html">Rosas</a></li>
-                  <li><a href="../Plantas/pino.html">Pino Limon</a></li>
-                  <li><a href="../Plantas/estrella.html">Estrella Federal</a></li>
-                  <li><a href="../Plantas/suculentas.html">Suculentas</a></li>
-                  <li><a href="../Plantas/clavel.html">Clavel</a></li>
+                <div class="contenido__paginas">
+                  <ul class="contenido__paginas-social">
+                    <li><a href="https://www.facebook.com/" target="_blank">
+                      <img src="../Media/Imagenes/facebook (1).svg" alt="Facebook">
+                    </a></li>
+                      <li><a href="https://www.instagram.com/?hl=es" target="_blank">
+                      <img src="../Media/Imagenes/instagram (1).svg" alt="Instagram">
+                    </a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank">
+                    <img src="../Media/Imagenes/youtube.svg" alt="Youtube">
+                  </a></li>
+                  </ul>
                 </div>
-              </div>
-              <div class="footerContenido__social">
-                  <li><a href="https://www.facebook.com/" target="_blank">
-                  <img src="../Media/Imagenes/facebook (1).svg" alt="Facebook">
-                </a></li>
-                  <li><a href="https://www.instagram.com/?hl=es" target="_blank">
-                  <img src="../Media/Imagenes/instagram (1).svg" alt="Instagram">
-                </a></li>
-                <li><a href="https://www.youtube.com/" target="_blank">
-                <img src="../Media/Imagenes/youtube.svg" alt="Youtube">
-              </a></li>
-              </div>
-              <div class="footerContenido__maps">
-                <iframe class="footerContenido__maps-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1760939343035!2d-58.56311968423814!3d-34.54909656211814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba020824f885%3A0xe9c1282df0b7c425!2sProf%20F.%20Ag%C3%BCer%205138%2C%20B1653LYJ%20Villa%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1626101986211!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="footerContenido__maps">
+                  <iframe class="footerContenido__maps-mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1760939343035!2d-58.56311968423814!3d-34.54909656211814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcba020824f885%3A0xe9c1282df0b7c425!2sProf%20F.%20Ag%C3%BCer%205138%2C%20B1653LYJ%20Villa%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1626101986211!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
               </div>
             </div>
           </footer>

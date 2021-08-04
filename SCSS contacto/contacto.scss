@@ -98,6 +98,10 @@ footer{
     grid-area: maps;
     margin: 40px;
 }
+.footerContenido__maps iframe{
+    width: 350px;
+    height: 200px;
+}
 .footerContenido__paginas{
     width: 300px;
     grid-area: paginas;
@@ -107,111 +111,116 @@ footer{
     align-items: center;
     margin-left: 100px;
 }
-.footerContenido__paginas li{
+.footerContenido__paginas-normales li{
     list-style-type: none;
-    text-decoration: none;
     font-size: 22px;
 }
-.footerContenido__paginas li a {
+.footerContenido__paginas-normales li a{
     text-decoration: none;
     color: rgb(199, 199, 199);
 }
-.footerContenido__social{
+.footerContenido__paginas-plantas li{
+    list-style-type: none;
+    font-size: 22px;
+}
+.footerContenido__paginas-plantas li a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+}
+.contenido__paginas{
     grid-area: social;
+}
+.contenido__paginas-social{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 20px;
     padding: 15px;
 }
-.footerContenido__social li{
+.contenido__paginas-social li{
     list-style-type: none;
 }
-.footerContenido__social li a img{
+.contenido__paginas-social li img{
     width: 50px;
     height: 50px;
+    margin-top: 60px;
 }
 @media only screen and (max-width: 768px){
     .navbar-nav{
         margin: auto;
     }
-.contacto{
-    display: grid;
-    grid-template-areas: 
-    "datos datos "
-    "formu formu ";
-    grid-template-columns: 2fr 2fr ;
-    grid-template-rows: auto auto;
-    margin: 15px;
-}
-.contacto__formulario{
-    grid-area: formu;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-}
-.contacto__datos-horario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contacto__datos{
-    text-align: center;
-    grid-area: datos;
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    border: solid #dfe2e09a 3px;
-    box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
-}
-.texto{
-    text-align: center;
-    font-size: 22px;
-    margin: 15px;
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "datos datos "
+        "formu formu ";
+        grid-template-columns: 2fr 2fr ;
+        grid-template-rows: auto auto;
+        margin: 15px;
+    }
+    .contacto__formulario{
+        grid-area: formu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    .contacto__datos-horario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__datos{
+        text-align: center;
+        grid-area: datos;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    .texto{
+        text-align: center;
+        font-size: 22px;
+        margin: 15px;
     }
     .footerContenido{
         display: grid;
         grid-template-areas: 
-        " . paginas . "
-        " . social . "
-        " . maps . ";
-        grid-template-columns: 1fr 4fr 1fr ;
+        ". paginas ."
+        ". social ."
+        ". maps .";
+        grid-template-columns: 1fr 4fr 1fr;
         grid-template-rows: auto auto auto;
     }
     .footerContenido__maps{
         grid-area: maps;
+        margin: 5px;
     }
-    .footerContenido__paginas{
-        grid-area: paginas;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .footerContenido__maps iframe{
+        width: 100%;
+        height: auto;
     }
-    .footerContenido__paginas li{
-        list-style-type: none;
-        text-decoration: none;
-        font-size: 22px;
+    .footerContenido__paginas-normales li{
+        font-size: 24px;
     }
-    .footerContenido__paginas li a {
+    .footerContenido__paginas-plantas li{
+        font-size: 24px;
+    }
+    .footerContenido__paginas-plantas li a{
         text-decoration: none;
         color: rgb(199, 199, 199);
     }
-    .footerContenido__social{
+    .contenido__paginas{
         grid-area: social;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    }
+    .contenido__paginas-social{
+        margin: 10px;
+        padding: 8px;
+    }
+    .contenido__paginas-social li img{
         margin: 20px;
-        padding: 15px;
-    }
-    .footerContenido__social li{
-        list-style-type: none;
-    }
-    .footerContenido__social li a img{
-        width: 50px;
-        height: 50px;
     }
 }
 @media only screen and (max-width: 375px){
@@ -228,80 +237,12 @@ footer{
     margin: 5px;
 }
 .contacto__formulario{
-    grid-area: formu;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
     height: auto;
 }
-.contacto__datos-horario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contacto__datos{
-    text-align: center;
-    grid-area: datos;
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    border: solid #dfe2e09a 3px;
-    box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
-}
-.texto{
-    text-align: center;
-    font-size: 22px;
-    margin: 5px;
-    }
-    .footerContenido{
-        display: grid;
-        grid-template-areas: 
-        " . paginas .  "
-        " . social . "
-        " . maps . ";
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: auto auto auto ;
-    }
-    .footerContenido__maps{
-        grid-area: maps;
-        width: 280px;
-        height: auto;
-    }
-    .footerContenido__maps-mapa{
-        width: 100%;
-        height: auto;
-    }
     .footerContenido__paginas{
-        grid-area: paginas;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 220px;
-        height: auto;
-    }
-    .footerContenido__paginas li{
-        list-style-type: none;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    .footerContenido__paginas li a {
-        text-decoration: none;
-        color: rgb(199, 199, 199);
-    }
-    .footerContenido__social{
-        grid-area: social;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5px;
-    }
-    .footerContenido__social li{
-        list-style-type: none;
-    }
-    .footerContenido__social li a img{
-        width: 50px;
-        height: 50px;
+        width: 240px;
+        margin-left: 25px;
+        margin-top: 10px;
+        margin-right: 25px;
     }
 }
