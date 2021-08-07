@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500;600&family=Marmelad&display=swap');
+//Pagina principal
 *{
     margin: 0px;
     padding: 0px;
@@ -296,6 +297,142 @@ footer{
     }
     .contenido__paginas-social li img{
         margin: 20px;
+    }
+    /*Estilos Pagina Productos*/
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas{
+        display: grid;
+        grid-template-areas: 
+        "cactus estrella"
+        "rosas suculentas";
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto;
+    }
+    .cactus{
+        grid-area: cactus;
+    }
+    .estrella{
+        grid-area: estrella;
+    }
+    .rosas{
+        grid-area: rosas;
+    }
+    .suculentas{
+        grid-area: suculentas;
+    }
+    .productos__macetas{
+        display: grid;
+        grid-template-areas: 
+        "artesanal plastico"
+        "cemento ceramica";
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto;
+    }
+    .artesanal{
+        grid-area: artesanal;
+    }
+    .plastico{
+        grid-area: plastico;
+    }
+    .cemento{
+        grid-area: cemento;
+    }
+    .ceramica{
+        grid-area: ceramica;
+    }
+    .productos__jardineria{
+        display: grid;
+        grid-template-areas: 
+        "insecti tierra"
+        "mangue pala";
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 2fr;
+    }
+    .insecticida{
+        grid-area: insecti;
+    }
+    .tierra{
+        grid-area: tierra;
+    }
+    .manguera{
+        grid-area: mangue;
+    }
+    .pala{
+        grid-area: pala;
+    }
+    .card{
+        width: 300px;
+        height: 450px;
+        margin: 25px;
+    }
+    .productos__jardin-prod1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__jardin-prod2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__jardin-prod3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas-prod1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas-prod2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas-prod3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__macetas-prod1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__macetas-prod2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__macetas-prod3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 }
 @media only screen and (max-width: 375px){

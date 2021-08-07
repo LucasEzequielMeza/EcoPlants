@@ -1,0 +1,1190 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500;600&family=Marmelad&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&family=Merienda:wght@400;700&display=swap");
+/* line 2, ../Final/SCSS Completo/_main.scss */
+body {
+  font-size: 22px;
+  font-family: "Cormorant Upright", sans-serif;
+  font-weight: 500;
+}
+
+/* line 7, ../Final/SCSS Completo/_main.scss */
+.titulo {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Marmelad", sans-serif;
+}
+
+/* line 12, ../Final/SCSS Completo/_main.scss */
+.informacion_titulo {
+  font-size: 24px;
+  margin-top: 15px;
+  font-family: "Marmelad", sans-serif;
+  font-weight: 600;
+}
+
+/* line 18, ../Final/SCSS Completo/_main.scss */
+.card-title {
+  font-family: "Marmelad", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* line 24, ../Final/SCSS Completo/_main.scss */
+.informacion {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: ". riego riego ." ". luz luz ." ". trans trans ." ". abono abono .";
+}
+
+/* line 33, ../Final/SCSS Completo/_main.scss */
+.informacion .informacion__luz {
+  grid-area: luz;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 42, ../Final/SCSS Completo/_main.scss */
+.informacion .informacion__transplante {
+  grid-area: trans;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 51, ../Final/SCSS Completo/_main.scss */
+.informacion .informacion__abono {
+  grid-area: abono;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 6, ../Final/SCSS Completo/completo.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Estilos compartidos en todas las paginas*/
+/*Navbar*/
+/* line 12, ../Final/SCSS Completo/completo.scss */
+.navbar {
+  z-index: 1;
+  margin-bottom: 15px;
+  background: #cfcfce;
+  background: linear-gradient(180deg, #cfcfce 0%, #eaeaea 42%, #fffefe 70%);
+}
+
+/* line 18, ../Final/SCSS Completo/completo.scss */
+.navbar-nav {
+  margin-left: 580px;
+}
+
+/* line 21, ../Final/SCSS Completo/completo.scss */
+.menu {
+  max-height: 80px;
+}
+
+/* line 24, ../Final/SCSS Completo/completo.scss */
+.menu img {
+  border-radius: 100%;
+  max-height: 65px;
+}
+
+/*Footer*/
+/* line 29, ../Final/SCSS Completo/completo.scss */
+footer {
+  background: #838080;
+  height: auto;
+  width: 100%;
+}
+
+/* line 34, ../Final/SCSS Completo/completo.scss */
+.footerContenido {
+  display: grid;
+  grid-template-areas: "  paginas social maps " " paginas social maps ";
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: auto auto auto;
+}
+
+/* line 42, ../Final/SCSS Completo/completo.scss */
+.footerContenido__maps {
+  grid-area: maps;
+  margin: 40px;
+}
+
+/* line 46, ../Final/SCSS Completo/completo.scss */
+.footerContenido__maps iframe {
+  width: 350px;
+  height: 200px;
+}
+
+/* line 50, ../Final/SCSS Completo/completo.scss */
+.footerContenido__paginas {
+  width: 300px;
+  grid-area: paginas;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
+
+/* line 59, ../Final/SCSS Completo/completo.scss */
+.footerContenido__paginas-normales li {
+  list-style-type: none;
+  font-size: 22px;
+}
+
+/* line 63, ../Final/SCSS Completo/completo.scss */
+.footerContenido__paginas-normales li a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+/* line 67, ../Final/SCSS Completo/completo.scss */
+.footerContenido__paginas-plantas li {
+  list-style-type: none;
+  font-size: 22px;
+}
+
+/* line 71, ../Final/SCSS Completo/completo.scss */
+.footerContenido__paginas-plantas li a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+/* line 75, ../Final/SCSS Completo/completo.scss */
+.contenido__paginas {
+  grid-area: social;
+}
+
+/* line 78, ../Final/SCSS Completo/completo.scss */
+.contenido__paginas-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 15px;
+}
+
+/* line 86, ../Final/SCSS Completo/completo.scss */
+.contenido__paginas-social li {
+  list-style-type: none;
+}
+
+/* line 89, ../Final/SCSS Completo/completo.scss */
+.contenido__paginas-social li img {
+  width: 50px;
+  height: 50px;
+  margin-top: 60px;
+}
+
+/*Estilos pagina principal*/
+/* line 95, ../Final/SCSS Completo/completo.scss */
+.plantas {
+  display: grid;
+  grid-template-areas: "cactus rosas pino" "cactus rosas pino" "estrella suculentas clavel" "estrella suculentas clavel";
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: auto auto auto;
+  margin: 40px;
+  align-items: center;
+}
+
+/* line 107, ../Final/SCSS Completo/completo.scss */
+.plantas__cactus {
+  grid-area: cactus;
+}
+
+/* line 110, ../Final/SCSS Completo/completo.scss */
+.plantas__rosas {
+  grid-area: rosas;
+}
+
+/* line 113, ../Final/SCSS Completo/completo.scss */
+.plantas__pinolimon {
+  grid-area: pino;
+}
+
+/* line 116, ../Final/SCSS Completo/completo.scss */
+.plantas__estrella {
+  grid-area: estrella;
+}
+
+/* line 119, ../Final/SCSS Completo/completo.scss */
+.plantas__suculentas {
+  grid-area: suculentas;
+}
+
+/* line 122, ../Final/SCSS Completo/completo.scss */
+.plantas__clavel {
+  grid-area: clavel;
+}
+
+/* line 125, ../Final/SCSS Completo/completo.scss */
+.card {
+  margin: 25px;
+  max-width: 500px;
+  min-height: 450px;
+  transition: all 600ms ease-in-out;
+  box-shadow: 6px 5px 15px 6px #D7D7D7;
+}
+
+/* line 132, ../Final/SCSS Completo/completo.scss */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* line 135, ../Final/SCSS Completo/completo.scss */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 140, ../Final/SCSS Completo/completo.scss */
+.informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 145, ../Final/SCSS Completo/completo.scss */
+.informacion__titulo {
+  font-size: 35px;
+  color: black;
+  margin-top: 10px;
+  box-shadow: 0 0 0 0.45 #2e2e30;
+}
+
+/* line 151, ../Final/SCSS Completo/completo.scss */
+.carrusel {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 157, ../Final/SCSS Completo/completo.scss */
+.carousel {
+  width: 1200px;
+  margin-top: 15px;
+}
+
+/* line 161, ../Final/SCSS Completo/completo.scss */
+.contenido {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+/* line 168, ../Final/SCSS Completo/completo.scss */
+.contenido__informacion {
+  text-align: center;
+  width: 1400px;
+  height: auto;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+/* line 176, ../Final/SCSS Completo/completo.scss */
+.contenido__informacion-titulo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 180, ../Final/SCSS Completo/completo.scss */
+.contenido__informacion-texto {
+  margin: 15px;
+  padding: 8px;
+}
+
+/*Estilo pagina productos*/
+/* line 185, ../Final/SCSS Completo/completo.scss */
+.titulo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* line 189, ../Final/SCSS Completo/completo.scss */
+.cardProductos {
+  width: 270px;
+  height: 420px;
+  margin-left: 45px;
+  margin-right: 45px;
+  transition: all 600ms ease-in-out;
+}
+
+/* line 196, ../Final/SCSS Completo/completo.scss */
+.cardProductos:hover {
+  transform: scale(1.1);
+}
+
+/* line 199, ../Final/SCSS Completo/completo.scss */
+.productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 205, ../Final/SCSS Completo/completo.scss */
+.productos__plantas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* line 212, ../Final/SCSS Completo/completo.scss */
+.productos__macetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* line 219, ../Final/SCSS Completo/completo.scss */
+.productos__jardineria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/*Estilo paginas Plantas*/
+/* line 227, ../Final/SCSS Completo/completo.scss */
+.informacion__titulo {
+  text-align: center;
+}
+
+/* line 230, ../Final/SCSS Completo/completo.scss */
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 236, ../Final/SCSS Completo/completo.scss */
+.informacion__img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 6px 5px 15px 6px #D7D7D7;
+}
+
+/* line 241, ../Final/SCSS Completo/completo.scss */
+.titulo {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 246, ../Final/SCSS Completo/completo.scss */
+.informacion__riego-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+/* line 255, ../Final/SCSS Completo/completo.scss */
+.informacion__luz-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+/* line 264, ../Final/SCSS Completo/completo.scss */
+.informacion__transplante-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+/* line 273, ../Final/SCSS Completo/completo.scss */
+.informacion__abono-texto {
+  width: 800px;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+/*Estilo pagina Nosotros*/
+/* line 283, ../Final/SCSS Completo/completo.scss */
+ul li h2 {
+  display: inline;
+  font-size: 18px;
+  font-family: 'Merienda', sans-serif;
+  font-weight: 400;
+}
+
+/* line 289, ../Final/SCSS Completo/completo.scss */
+ul li h3 {
+  display: inline;
+  font-size: 18px;
+  font-family: 'Merienda', sans-serif;
+  font-weight: 400;
+}
+
+/* line 295, ../Final/SCSS Completo/completo.scss */
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 301, ../Final/SCSS Completo/completo.scss */
+.nosotros__contenido {
+  width: 1650px;
+  height: auto;
+  margin: 60px;
+  padding: 30px;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+/*Estilo pagina Contacto*/
+/* line 311, ../Final/SCSS Completo/completo.scss */
+.contacto__formulario-nombre {
+  display: inline;
+}
+
+/* line 314, ../Final/SCSS Completo/completo.scss */
+.contacto__formulario-mensaje {
+  width: 100%;
+  height: auto;
+}
+
+/* line 318, ../Final/SCSS Completo/completo.scss */
+.form-control {
+  margin: 10px;
+  box-shadow: 2px 1px 4px 2px rgba(68, 63, 63, 0.767);
+}
+
+/* line 322, ../Final/SCSS Completo/completo.scss */
+.contacto__formu {
+  width: 100%;
+}
+
+/* line 325, ../Final/SCSS Completo/completo.scss */
+.contacto {
+  display: grid;
+  grid-template-areas: "datos datos formu formu" "datos datos formu formu";
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: auto auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 337, ../Final/SCSS Completo/completo.scss */
+.contacto__formulario {
+  grid-area: formu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+/* line 344, ../Final/SCSS Completo/completo.scss */
+.contacto__datos-horario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Merienda', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* line 352, ../Final/SCSS Completo/completo.scss */
+.contacto__datos {
+  text-align: center;
+  grid-area: datos;
+  width: 800px;
+  height: auto;
+  border-radius: 20px;
+  border: solid #dfe2e09a 3px;
+  box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+}
+
+/* line 361, ../Final/SCSS Completo/completo.scss */
+.contacto__formulario-boton {
+  text-align: center;
+}
+
+/* line 364, ../Final/SCSS Completo/completo.scss */
+.contenido__datos-info {
+  margin: 15px;
+}
+
+/* line 367, ../Final/SCSS Completo/completo.scss */
+.texto {
+  text-align: center;
+  font-size: 22px;
+  margin: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  /*NabVar responsive*/
+  /* line 374, ../Final/SCSS Completo/completo.scss */
+  ul .navbar-nav {
+    z-index: 1;
+  }
+  /* line 377, ../Final/SCSS Completo/completo.scss */
+  .navbar-nav {
+    margin: auto;
+  }
+  /*Footer responsive*/
+  /* line 381, ../Final/SCSS Completo/completo.scss */
+  .footerContenido {
+    display: grid;
+    grid-template-areas: ". paginas ." ". social ." ". maps .";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  /* line 390, ../Final/SCSS Completo/completo.scss */
+  .footerContenido__maps {
+    grid-area: maps;
+    margin: 5px;
+  }
+  /* line 394, ../Final/SCSS Completo/completo.scss */
+  .footerContenido__maps iframe {
+    width: 100%;
+    height: auto;
+  }
+  /* line 398, ../Final/SCSS Completo/completo.scss */
+  .footerContenido__paginas-normales li {
+    font-size: 24px;
+  }
+  /* line 401, ../Final/SCSS Completo/completo.scss */
+  .footerContenido__paginas-plantas li {
+    font-size: 24px;
+  }
+  /* line 404, ../Final/SCSS Completo/completo.scss */
+  .footerContenido__paginas-plantas li a {
+    text-decoration: none;
+    color: #c7c7c7;
+  }
+  /* line 408, ../Final/SCSS Completo/completo.scss */
+  .contenido__paginas {
+    grid-area: social;
+  }
+  /* line 411, ../Final/SCSS Completo/completo.scss */
+  .contenido__paginas-social {
+    margin: 10px;
+    padding: 8px;
+  }
+  /* line 415, ../Final/SCSS Completo/completo.scss */
+  .contenido__paginas-social li img {
+    margin: 20px;
+  }
+  /*Estilos pag principal*/
+  /* line 419, ../Final/SCSS Completo/completo.scss */
+  .plantas {
+    display: grid;
+    grid-template-areas: " . cactus . " " . rosas . " " . pino . " " . estrella . " " . suculentas . " " . clavel . ";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    margin: 10px;
+  }
+  /* line 433, ../Final/SCSS Completo/completo.scss */
+  .plantas__cactus {
+    grid-area: cactus;
+  }
+  /* line 436, ../Final/SCSS Completo/completo.scss */
+  .plantas__rosas {
+    grid-area: rosas;
+  }
+  /* line 439, ../Final/SCSS Completo/completo.scss */
+  .plantas__pinolimon {
+    grid-area: pino;
+  }
+  /* line 442, ../Final/SCSS Completo/completo.scss */
+  .plantas__estrella {
+    grid-area: estrella;
+  }
+  /* line 445, ../Final/SCSS Completo/completo.scss */
+  .plantas__suculentas {
+    grid-area: suculentas;
+  }
+  /* line 448, ../Final/SCSS Completo/completo.scss */
+  .plantas__clavel {
+    grid-area: clavel;
+  }
+  /* line 451, ../Final/SCSS Completo/completo.scss */
+  .carrusel {
+    margin-bottom: 15px;
+  }
+  /* line 454, ../Final/SCSS Completo/completo.scss */
+  .carousel-control-prev {
+    height: 40px;
+    margin: auto;
+  }
+  /* line 458, ../Final/SCSS Completo/completo.scss */
+  .carousel-control-next {
+    height: 40px;
+    margin: auto;
+  }
+  /* line 462, ../Final/SCSS Completo/completo.scss */
+  .card {
+    margin: 8px;
+  }
+  /* line 465, ../Final/SCSS Completo/completo.scss */
+  .contenido {
+    margin: 10px;
+  }
+  /* line 468, ../Final/SCSS Completo/completo.scss */
+  .contenido__informacion {
+    width: 99%;
+  }
+  /* line 471, ../Final/SCSS Completo/completo.scss */
+  .contenido__informacion-titulo {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  /* line 475, ../Final/SCSS Completo/completo.scss */
+  .contenido__informacion-texto {
+    margin: 5px;
+    padding: 5px;
+  }
+  /*Estilo pagina productos*/
+  /* line 480, ../Final/SCSS Completo/completo.scss */
+  .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 487, ../Final/SCSS Completo/completo.scss */
+  .productos__plantas {
+    display: grid;
+    grid-template-areas: "cactus estrella" "rosas suculentas";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+  }
+  /* line 495, ../Final/SCSS Completo/completo.scss */
+  .cactus {
+    grid-area: cactus;
+  }
+  /* line 498, ../Final/SCSS Completo/completo.scss */
+  .estrella {
+    grid-area: estrella;
+  }
+  /* line 501, ../Final/SCSS Completo/completo.scss */
+  .rosas {
+    grid-area: rosas;
+  }
+  /* line 504, ../Final/SCSS Completo/completo.scss */
+  .suculentas {
+    grid-area: suculentas;
+  }
+  /* line 507, ../Final/SCSS Completo/completo.scss */
+  .productos__macetas {
+    display: grid;
+    grid-template-areas: "artesanal plastico" "cemento ceramica";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+  }
+  /* line 515, ../Final/SCSS Completo/completo.scss */
+  .artesanal {
+    grid-area: artesanal;
+  }
+  /* line 518, ../Final/SCSS Completo/completo.scss */
+  .plastico {
+    grid-area: plastico;
+  }
+  /* line 521, ../Final/SCSS Completo/completo.scss */
+  .cemento {
+    grid-area: cemento;
+  }
+  /* line 524, ../Final/SCSS Completo/completo.scss */
+  .ceramica {
+    grid-area: ceramica;
+  }
+  /* line 527, ../Final/SCSS Completo/completo.scss */
+  .productos__jardineria {
+    display: grid;
+    grid-template-areas: "insecti tierra" "mangue pala";
+    grid-template-rows: auto auto;
+    grid-template-columns: 2fr 2fr;
+  }
+  /* line 535, ../Final/SCSS Completo/completo.scss */
+  .insecticida {
+    grid-area: insecti;
+  }
+  /* line 538, ../Final/SCSS Completo/completo.scss */
+  .tierra {
+    grid-area: tierra;
+  }
+  /* line 541, ../Final/SCSS Completo/completo.scss */
+  .manguera {
+    grid-area: mangue;
+  }
+  /* line 544, ../Final/SCSS Completo/completo.scss */
+  .pala {
+    grid-area: pala;
+  }
+  /* line 547, ../Final/SCSS Completo/completo.scss */
+  .cardProductos {
+    width: 300px;
+    height: 450px;
+    margin: 25px;
+  }
+  /* line 552, ../Final/SCSS Completo/completo.scss */
+  .productos__jardin-prod1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 559, ../Final/SCSS Completo/completo.scss */
+  .productos__jardin-prod2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 566, ../Final/SCSS Completo/completo.scss */
+  .productos__jardin-prod3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 573, ../Final/SCSS Completo/completo.scss */
+  .productos__plantas-prod1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 580, ../Final/SCSS Completo/completo.scss */
+  .productos__plantas-prod2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 587, ../Final/SCSS Completo/completo.scss */
+  .productos__plantas-prod3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 594, ../Final/SCSS Completo/completo.scss */
+  .productos__macetas-prod1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 601, ../Final/SCSS Completo/completo.scss */
+  .productos__macetas-prod2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /* line 608, ../Final/SCSS Completo/completo.scss */
+  .productos__macetas-prod3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  /*Estilo pagina Plantas*/
+  /* line 616, ../Final/SCSS Completo/completo.scss */
+  .informacion {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: " riego riego " " luz luz " " trans trans " " abono abono ";
+  }
+  /* line 626, ../Final/SCSS Completo/completo.scss */
+  .informacion__riego {
+    grid-area: riego;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+  }
+  /* line 634, ../Final/SCSS Completo/completo.scss */
+  .informacion__luz {
+    grid-area: luz;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+  }
+  /* line 642, ../Final/SCSS Completo/completo.scss */
+  .informacion__transplante {
+    grid-area: trans;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+  }
+  /* line 650, ../Final/SCSS Completo/completo.scss */
+  .informacion__abono {
+    grid-area: abono;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+  }
+  /* line 658, ../Final/SCSS Completo/completo.scss */
+  .banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+  /* line 666, ../Final/SCSS Completo/completo.scss */
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 670, ../Final/SCSS Completo/completo.scss */
+  .informacion__titulo {
+    text-align: center;
+  }
+  /* line 673, ../Final/SCSS Completo/completo.scss */
+  .informacion__img {
+    max-width: 400px;
+    max-height: auto;
+  }
+  /* line 677, ../Final/SCSS Completo/completo.scss */
+  .informacion__riego-texto {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  /* line 686, ../Final/SCSS Completo/completo.scss */
+  .informacion__luz-texto {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  /* line 695, ../Final/SCSS Completo/completo.scss */
+  .informacion__transplante-texto {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  /* line 704, ../Final/SCSS Completo/completo.scss */
+  .informacion__abono-texto {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  /* line 713, ../Final/SCSS Completo/completo.scss */
+  .informacion__img {
+    width: 95%;
+    height: auto;
+    box-shadow: 6px 5px 15px 6px #D7D7D7;
+    margin: 15px;
+    padding: 6px;
+  }
+  /*Estilos pagina Nosotros*/
+  /* line 721, ../Final/SCSS Completo/completo.scss */
+  .nosotros__contenido {
+    margin: 25px;
+    padding: 13px;
+  }
+  /*Estilo pagina Contacto*/
+  /* line 726, ../Final/SCSS Completo/completo.scss */
+  .contacto {
+    display: grid;
+    grid-template-areas: "datos datos " "formu formu ";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    margin: 15px;
+  }
+  /* line 735, ../Final/SCSS Completo/completo.scss */
+  .contacto__formulario {
+    grid-area: formu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  /* line 742, ../Final/SCSS Completo/completo.scss */
+  .contacto__datos-horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 747, ../Final/SCSS Completo/completo.scss */
+  .contacto__datos {
+    text-align: center;
+    grid-area: datos;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow: 6px 5px 12px 5px rgba(68, 63, 63, 0.767);
+  }
+  /* line 756, ../Final/SCSS Completo/completo.scss */
+  .texto {
+    text-align: center;
+    font-size: 22px;
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  /*Footer responsive*/
+  /* line 764, ../Final/SCSS Completo/completo.scss */
+  .footerContenido__paginas {
+    width: 240px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  /*Estilos paginas principal*/
+  /* line 771, ../Final/SCSS Completo/completo.scss */
+  .plantas {
+    display: grid;
+    grid-template-areas: " cactus  " "  rosas  " "  pino  " "  estrella  " "  suculentas  " "  clavel  ";
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    margin: 15px;
+  }
+  /* line 784, ../Final/SCSS Completo/completo.scss */
+  .plantas__cactus {
+    grid-area: cactus;
+  }
+  /* line 787, ../Final/SCSS Completo/completo.scss */
+  .plantas__rosas {
+    grid-area: rosas;
+  }
+  /* line 790, ../Final/SCSS Completo/completo.scss */
+  .plantas__pinolimon {
+    grid-area: pino;
+  }
+  /* line 793, ../Final/SCSS Completo/completo.scss */
+  .plantas__estrella {
+    grid-area: estrella;
+  }
+  /* line 796, ../Final/SCSS Completo/completo.scss */
+  .plantas__suculentas {
+    grid-area: suculentas;
+  }
+  /* line 799, ../Final/SCSS Completo/completo.scss */
+  .plantas__clavel {
+    grid-area: clavel;
+  }
+  /* line 802, ../Final/SCSS Completo/completo.scss */
+  .carousel-control-prev {
+    width: 15px;
+    height: 20px;
+    margin: auto;
+  }
+  /* line 807, ../Final/SCSS Completo/completo.scss */
+  .carousel-control-next {
+    height: 20px;
+    width: 15px;
+    margin: auto;
+  }
+  /* line 812, ../Final/SCSS Completo/completo.scss */
+  .contenido__informacion {
+    width: 95%;
+  }
+  /*Estilos pagina productos*/
+  /* line 816, ../Final/SCSS Completo/completo.scss */
+  .cardProductos {
+    width: 280px;
+    height: 380px;
+    margin: 15px;
+  }
+  /* line 821, ../Final/SCSS Completo/completo.scss */
+  .productos__plantas {
+    display: grid;
+    grid-template-areas: "cactus" "estrella" "rosas" "suculentas";
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+  }
+  /* line 831, ../Final/SCSS Completo/completo.scss */
+  .cactus {
+    grid-area: cactus;
+  }
+  /* line 834, ../Final/SCSS Completo/completo.scss */
+  .estrella {
+    grid-area: estrella;
+  }
+  /* line 837, ../Final/SCSS Completo/completo.scss */
+  .rosas {
+    grid-area: rosas;
+  }
+  /* line 840, ../Final/SCSS Completo/completo.scss */
+  .suculentas {
+    grid-area: suculentas;
+  }
+  /* line 843, ../Final/SCSS Completo/completo.scss */
+  .productos__macetas {
+    display: grid;
+    grid-template-areas: "artesanal" "plastico" "cemento" "ceramica";
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+  }
+  /* line 853, ../Final/SCSS Completo/completo.scss */
+  .artesanal {
+    grid-area: artesanal;
+  }
+  /* line 856, ../Final/SCSS Completo/completo.scss */
+  .plastico {
+    grid-area: plastico;
+  }
+  /* line 859, ../Final/SCSS Completo/completo.scss */
+  .cemento {
+    grid-area: cemento;
+  }
+  /* line 862, ../Final/SCSS Completo/completo.scss */
+  .ceramica {
+    grid-area: ceramica;
+  }
+  /* line 865, ../Final/SCSS Completo/completo.scss */
+  .productos__jardineria {
+    display: grid;
+    grid-template-areas: "insecti" "tierra" "mangue" "pala";
+    grid-template-rows: auto;
+    grid-template-columns: 2fr;
+  }
+  /* line 875, ../Final/SCSS Completo/completo.scss */
+  .insecticida {
+    grid-area: insecti;
+  }
+  /* line 878, ../Final/SCSS Completo/completo.scss */
+  .tierra {
+    grid-area: tierra;
+  }
+  /* line 881, ../Final/SCSS Completo/completo.scss */
+  .manguera {
+    grid-area: mangue;
+  }
+  /* line 884, ../Final/SCSS Completo/completo.scss */
+  .pala {
+    grid-area: pala;
+  }
+  /*Estilo paginas Plantas*/
+  /* line 888, ../Final/SCSS Completo/completo.scss */
+  .informacion__riego-texto {
+    width: 85%;
+    height: auto;
+  }
+  /* line 892, ../Final/SCSS Completo/completo.scss */
+  .informacion__luz-texto {
+    width: 85%;
+    height: auto;
+  }
+  /* line 896, ../Final/SCSS Completo/completo.scss */
+  .informacion__transplante-texto {
+    width: 85%;
+    height: auto;
+  }
+  /* line 900, ../Final/SCSS Completo/completo.scss */
+  .informacion__abono-texto {
+    width: 85%;
+    height: auto;
+  }
+  /* line 904, ../Final/SCSS Completo/completo.scss */
+  .informacion__img {
+    width: 90%;
+    height: auto;
+    box-shadow: 6px 5px 15px 6px #D7D7D7;
+    margin: 15px;
+    padding: 6px;
+  }
+  /* line 911, ../Final/SCSS Completo/completo.scss */
+  .nosotros__contenido {
+    margin: 15px;
+    padding: 8px;
+  }
+  /*Estilo pagina Contacto*/
+  /* line 916, ../Final/SCSS Completo/completo.scss */
+  .contacto {
+    display: grid;
+    grid-template-areas: "datos datos " "formu formu ";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    margin: 5px;
+  }
+  /* line 925, ../Final/SCSS Completo/completo.scss */
+  .contacto__formulario {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=completo.css.map */

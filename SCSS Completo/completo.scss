@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;500;600&family=Marmelad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&family=Marmelad&family=Merienda:wght@400;700&display=swap');
+@import "main";
+@import "variables";
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+/*Estilos compartidos en todas las paginas*/
+/*Navbar*/
+.navbar {
+    z-index: 1;
+    margin-bottom: 15px;
+    background: rgb(207,207,206);
+    background: linear-gradient(180deg, rgba(207,207,206,1) 0%, rgba(234,234,234,1) 42%, rgba(255,254,254,1) 70%);
+}
+.navbar-nav{
+      margin-left: 580px;
+}
+.menu{
+    max-height: 80px;
+}
+.menu img{
+    border-radius: 100%;
+    max-height: 65px;
+}
+/*Footer*/
+footer{
+    background: rgb(131, 128, 128);
+    height: auto;
+    width: 100%;
+}
+.footerContenido{
+    display: grid;
+    grid-template-areas: 
+    "  paginas social maps "
+    " paginas social maps ";
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+}
+.footerContenido__maps{
+    grid-area: maps;
+    margin: 40px;
+}
+.footerContenido__maps iframe{
+    width: 350px;
+    height: 200px;
+}
+.footerContenido__paginas{
+    width: 300px;
+    grid-area: paginas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.footerContenido__paginas-normales li{
+    list-style-type: none;
+    font-size: 22px;
+}
+.footerContenido__paginas-normales li a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+}
+.footerContenido__paginas-plantas li{
+    list-style-type: none;
+    font-size: 22px;
+}
+.footerContenido__paginas-plantas li a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+}
+.contenido__paginas{
+    grid-area: social;
+}
+.contenido__paginas-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 15px;
+}
+.contenido__paginas-social li{
+    list-style-type: none;
+}
+.contenido__paginas-social li img{
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+}
+/*Estilos pagina principal*/
+.plantas{
+    display: grid;
+    grid-template-areas: 
+    "cactus rosas pino"
+    "cactus rosas pino"
+    "estrella suculentas clavel"
+    "estrella suculentas clavel";
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    margin: 40px;
+    align-items: center;
+}
+.plantas__cactus{
+    grid-area: cactus;
+}
+.plantas__rosas{
+    grid-area: rosas;
+}
+.plantas__pinolimon{
+    grid-area: pino;
+}
+.plantas__estrella{
+    grid-area: estrella;
+}
+.plantas__suculentas{
+    grid-area: suculentas;
+}
+.plantas__clavel{
+    grid-area: clavel;
+}
+.card{
+    margin: 25px;
+    max-width: 500px;
+    min-height: 450px;
+    transition: all 600ms ease-in-out;
+    box-shadow: 6px 5px 15px 6px #D7D7D7;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.informacion__titulo{
+    font-size: 35px;
+    color: black;
+    margin-top: 10px;
+    box-shadow: 0 0 0 0.45 rgb(46, 46, 48);
+}
+.carrusel{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.carousel{
+    width: 1200px;
+    margin-top: 15px;
+}
+.contenido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+.contenido__informacion{
+    text-align: center;
+    width: 1400px;
+    height: auto;
+    border-radius: 20px;
+    border: solid #dfe2e09a 3px;
+    box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+}
+.contenido__informacion-titulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contenido__informacion-texto{
+    margin: 15px;
+    padding: 8px;
+}
+/*Estilo pagina productos*/
+.titulo{
+    margin-top: 20px;
+    text-align: center;
+}
+.cardProductos{
+    width: 270px;
+    height: 420px;
+    margin-left: 45px;
+    margin-right: 45px;
+    transition: all 600ms ease-in-out;
+}
+.cardProductos:hover{
+    transform: scale(1.1);
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.productos__plantas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.productos__macetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.productos__jardineria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+/*Estilo paginas Plantas*/
+    .informacion__titulo{
+        text-align: center;
+    }
+    .banner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .informacion__img{
+        width: 100%;
+        height: 100%;
+        box-shadow: 6px 5px 15px 6px #D7D7D7;
+    }
+    .titulo{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .informacion__riego-texto{
+        width: 800px;
+        height: auto;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    .informacion__luz-texto{
+        width: 800px;
+        height: auto;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    .informacion__transplante-texto{
+        width: 800px;
+        height: auto;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    .informacion__abono-texto{
+        width: 800px;
+        height: auto;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    /*Estilo pagina Nosotros*/
+    ul li h2 {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Merienda', sans-serif;
+        font-weight: 400;
+    }
+    ul li h3 {
+        display: inline;
+        font-size: 18px;
+        font-family: 'Merienda', sans-serif;
+        font-weight: 400;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nosotros__contenido{
+        width: 1650px;
+        height: auto;
+        margin: 60px;
+        padding: 30px;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    /*Estilo pagina Contacto*/
+    .contacto__formulario-nombre{
+        display: inline;
+    }
+    .contacto__formulario-mensaje{
+        width: 100%;
+        height: auto;
+    }
+    .form-control{
+        margin: 10px;
+        box-shadow: 2px 1px 4px 2px rgba(68, 63, 63, 0.767);
+    }
+    .contacto__formu{
+        width: 100%;
+    }
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "datos datos formu formu"
+        "datos datos formu formu";
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-rows: auto auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .contacto__formulario{
+        grid-area: formu;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 800px;
+    }
+    .contacto__datos-horario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Merienda', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .contacto__datos{
+        text-align: center;
+        grid-area: datos;
+        width: 800px;
+        height: auto;
+        border-radius: 20px;
+        border: solid #dfe2e09a 3px;
+        box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+    }
+    .contacto__formulario-boton{
+        text-align: center;
+    }
+    .contenido__datos-info{
+        margin: 15px;
+    }
+    .texto{
+        text-align: center;
+        font-size: 22px;
+        margin: 25px;
+    }
+@media only screen and (max-width: 768px){
+    /*NabVar responsive*/
+    ul .navbar-nav {
+        z-index: 1;
+      }
+    .navbar-nav{
+        margin: auto;
+    }
+    /*Footer responsive*/
+    .footerContenido{
+        display: grid;
+        grid-template-areas: 
+        ". paginas ."
+        ". social ."
+        ". maps .";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .footerContenido__maps{
+        grid-area: maps;
+        margin: 5px;
+    }
+    .footerContenido__maps iframe{
+        width: 100%;
+        height: auto;
+    }
+    .footerContenido__paginas-normales li{
+        font-size: 24px;
+    }
+    .footerContenido__paginas-plantas li{
+        font-size: 24px;
+    }
+    .footerContenido__paginas-plantas li a{
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+    .contenido__paginas{
+        grid-area: social;
+    }
+    .contenido__paginas-social{
+        margin: 10px;
+        padding: 8px;
+    }
+    .contenido__paginas-social li img{
+        margin: 20px;
+    }
+    /*Estilos pag principal*/
+    .plantas{
+        display: grid;
+        grid-template-areas: 
+        " . cactus . "
+        " . rosas . "
+        " . pino . "
+        " . estrella . "
+        " . suculentas . "
+        " . clavel . ";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: auto auto auto;
+        align-items: center;
+        margin: 10px;
+    }
+    .plantas__cactus{
+        grid-area: cactus;
+    }
+    .plantas__rosas{
+        grid-area: rosas;
+    }
+    .plantas__pinolimon{
+        grid-area: pino;
+    }
+    .plantas__estrella{
+        grid-area: estrella;
+    }
+    .plantas__suculentas{
+        grid-area: suculentas;
+    }
+    .plantas__clavel{
+        grid-area: clavel;
+    }
+    .carrusel{
+        margin-bottom: 15px;
+    }
+    .carousel-control-prev{
+        height: 40px;
+        margin: auto;
+    }
+    .carousel-control-next{
+        height: 40px;
+        margin: auto;
+    }
+    .card{
+        margin: 8px;
+    }
+    .contenido{
+        margin: 10px;
+    }
+    .contenido__informacion{
+        width: 99%;
+    }
+    .contenido__informacion-titulo{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .contenido__informacion-texto{
+        margin: 5px;
+        padding: 5px;
+    }
+    /*Estilo pagina productos*/
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas{
+        display: grid;
+        grid-template-areas: 
+        "cactus estrella"
+        "rosas suculentas";
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto;
+    }
+    .cactus{
+        grid-area: cactus;
+    }
+    .estrella{
+        grid-area: estrella;
+    }
+    .rosas{
+        grid-area: rosas;
+    }
+    .suculentas{
+        grid-area: suculentas;
+    }
+    .productos__macetas{
+        display: grid;
+        grid-template-areas: 
+        "artesanal plastico"
+        "cemento ceramica";
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto;
+    }
+    .artesanal{
+        grid-area: artesanal;
+    }
+    .plastico{
+        grid-area: plastico;
+    }
+    .cemento{
+        grid-area: cemento;
+    }
+    .ceramica{
+        grid-area: ceramica;
+    }
+    .productos__jardineria{
+        display: grid;
+        grid-template-areas: 
+        "insecti tierra"
+        "mangue pala";
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 2fr;
+    }
+    .insecticida{
+        grid-area: insecti;
+    }
+    .tierra{
+        grid-area: tierra;
+    }
+    .manguera{
+        grid-area: mangue;
+    }
+    .pala{
+        grid-area: pala;
+    }
+    .cardProductos{
+        width: 300px;
+        height: 450px;
+        margin: 25px;
+    }
+    .productos__jardin-prod1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__jardin-prod2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__jardin-prod3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas-prod1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas-prod2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__plantas-prod3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__macetas-prod1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__macetas-prod2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .productos__macetas-prod3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    /*Estilo pagina Plantas*/
+    .informacion{
+        display: grid;
+        grid-template-columns: 2fr 2fr ;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        " riego riego "
+        " luz luz "
+        " trans trans "
+        " abono abono ";
+        }
+        .informacion__riego{
+            grid-area: riego;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+        }
+        .informacion__luz{
+            grid-area: luz;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+        }
+        .informacion__transplante{
+            grid-area: trans;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+        }
+        .informacion__abono{
+            grid-area: abono;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+        }
+        .banner{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+        }
+        .banner img{
+            width: 100%;
+            height: auto;
+        }
+        .informacion__titulo{
+            text-align: center;
+        }
+        .informacion__img{
+            max-width: 400px;
+            max-height: auto;
+        }
+        .informacion__riego-texto{
+            width: 95%;
+            height: auto;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 20px;
+            border: solid #dfe2e09a 3px;
+            box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+        }
+        .informacion__luz-texto{
+            width: 95%;
+            height: auto;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 20px;
+            border: solid #dfe2e09a 3px;
+            box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+        }
+        .informacion__transplante-texto{
+            width: 95%;
+            height: auto;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 20px;
+            border: solid #dfe2e09a 3px;
+            box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+        }
+        .informacion__abono-texto{
+            width: 95%;
+            height: auto;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 20px;
+            border: solid #dfe2e09a 3px;
+            box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+        }
+        .informacion__img{
+            width: 95%;
+            height: auto;
+            box-shadow: 6px 5px 15px 6px #D7D7D7;
+            margin: 15px;
+            padding: 6px;
+        }
+        /*Estilos pagina Nosotros*/
+        .nosotros__contenido{
+            margin: 25px;
+            padding: 13px;
+        }
+        /*Estilo pagina Contacto*/
+        .contacto{
+            display: grid;
+            grid-template-areas: 
+            "datos datos "
+            "formu formu ";
+            grid-template-columns: 2fr 2fr ;
+            grid-template-rows: auto auto;
+            margin: 15px;
+        }
+        .contacto__formulario{
+            grid-area: formu;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 95%;
+        }
+        .contacto__datos-horario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contacto__datos{
+            text-align: center;
+            grid-area: datos;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            border: solid #dfe2e09a 3px;
+            box-shadow:6px 5px 12px 5px rgba(68, 63, 63, 0.767) ;
+        }
+        .texto{
+            text-align: center;
+            font-size: 22px;
+            margin: 15px;
+        }
+}
+@media only screen and (max-width: 375px){
+    /*Footer responsive*/
+    .footerContenido__paginas{
+        width: 240px;
+        margin-left: 25px;
+        margin-top: 10px;
+        margin-right: 25px;
+    }
+    /*Estilos paginas principal*/
+    .plantas{
+        display: grid;
+        grid-template-areas: 
+        " cactus  "
+        "  rosas  "
+        "  pino  "
+        "  estrella  "
+        "  suculentas  "
+        "  clavel  ";
+        grid-template-columns: 2fr ;
+        grid-template-rows: auto ;
+        margin: 15px;
+    }
+    .plantas__cactus{
+        grid-area: cactus;
+    }
+    .plantas__rosas{
+        grid-area: rosas;
+    }
+    .plantas__pinolimon{
+        grid-area: pino;
+    }
+    .plantas__estrella{
+        grid-area: estrella;
+    }
+    .plantas__suculentas{
+        grid-area: suculentas;
+    }
+    .plantas__clavel{
+        grid-area: clavel;
+    }
+    .carousel-control-prev{
+        width: 15px;
+        height: 20px;
+        margin: auto;
+    }
+    .carousel-control-next{
+        height: 20px;
+        width: 15px;
+        margin: auto;
+    }
+    .contenido__informacion{
+        width: 95%;
+    }
+    /*Estilos pagina productos*/
+    .cardProductos{
+        width: 280px;
+        height: 380px;
+        margin: 15px;
+    }
+    .productos__plantas{
+        display: grid;
+        grid-template-areas: 
+        "cactus"
+        "estrella"
+        "rosas"
+        "suculentas";
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+    }
+    .cactus{
+        grid-area: cactus;
+    }
+    .estrella{
+        grid-area: estrella;
+    }
+    .rosas{
+        grid-area: rosas;
+    }
+    .suculentas{
+        grid-area: suculentas;
+    }
+    .productos__macetas{
+        display: grid;
+        grid-template-areas: 
+        "artesanal"
+        "plastico"
+        "cemento"
+        "ceramica";
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+    }
+    .artesanal{
+        grid-area: artesanal;
+    }
+    .plastico{
+        grid-area: plastico;
+    }
+    .cemento{
+        grid-area: cemento;
+    }
+    .ceramica{
+        grid-area: ceramica;
+    }
+    .productos__jardineria{
+        display: grid;
+        grid-template-areas: 
+        "insecti"
+        "tierra"
+        "mangue"
+        "pala";
+        grid-template-rows: auto;
+        grid-template-columns: 2fr;
+    }
+    .insecticida{
+        grid-area: insecti;
+    }
+    .tierra{
+        grid-area: tierra;
+    }
+    .manguera{
+        grid-area: mangue;
+    }
+    .pala{
+        grid-area: pala;
+    }
+    /*Estilo paginas Plantas*/
+    .informacion__riego-texto{
+        width: 85%;
+        height: auto;
+    }
+    .informacion__luz-texto{
+        width: 85%;
+        height: auto;
+    }
+    .informacion__transplante-texto{
+        width: 85%;
+        height: auto;
+    }
+    .informacion__abono-texto{
+        width: 85%;
+        height: auto;
+    }
+    .informacion__img{
+        width: 90%;
+        height: auto;
+        box-shadow: 6px 5px 15px 6px #D7D7D7;
+        margin: 15px;
+        padding: 6px;
+    }
+    .nosotros__contenido{
+        margin: 15px;
+        padding: 8px;
+    }
+    /*Estilo pagina Contacto*/
+    .contacto{
+        display: grid;
+        grid-template-areas: 
+        "datos datos "
+        "formu formu ";
+        grid-template-columns: 2fr 2fr ;
+        grid-template-rows: auto auto;
+        margin: 5px;
+    }
+    .contacto__formulario{
+        height: auto;
+    }
+}
