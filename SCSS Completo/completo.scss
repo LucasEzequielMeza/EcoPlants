@@ -113,8 +113,8 @@ footer{
         grid-area: cactus;
         .card{
             margin: 25px;
-            max-width: 500px;
-            min-height: 450px;
+            max-width: auto;
+            min-height: auto;
             transition: all 600ms ease-in-out;
             box-shadow: 6px 5px 15px 6px #D7D7D7;
             .card-body{
@@ -131,8 +131,8 @@ footer{
         grid-area: rosas;
         .card{
             margin: 25px;
-            max-width: 500px;
-            min-height: 450px;
+            max-width: auto;
+            min-height: auto;
             transition: all 600ms ease-in-out;
             box-shadow: 6px 5px 15px 6px #D7D7D7;
             .card-body{
@@ -149,8 +149,8 @@ footer{
         grid-area: pino;
         .card{
             margin: 25px;
-            max-width: 500px;
-            min-height: 450px;
+            max-width: auto;
+            min-height: auto;
             transition: all 600ms ease-in-out;
             box-shadow: 6px 5px 15px 6px #D7D7D7;
             .card-body{
@@ -167,8 +167,8 @@ footer{
         grid-area: estrella;
         .card{
             margin: 25px;
-            max-width: 500px;
-            min-height: 450px;
+            max-width: auto;
+            min-height: auto;
             transition: all 600ms ease-in-out;
             box-shadow: 6px 5px 15px 6px #D7D7D7;
             .card-body{
@@ -185,8 +185,8 @@ footer{
         grid-area: suculentas;
         .card{
             margin: 25px;
-            width: 500px;
-            min-height: 450px;
+            width: auto;
+            min-height: auto;
             transition: all 600ms ease-in-out;
             box-shadow: 6px 5px 15px 6px #D7D7D7;
             .card-body{
@@ -203,8 +203,8 @@ footer{
         grid-area: clavel;
         .card{
             margin: 25px;
-            max-width: 500px;
-            min-height: 450px;  
+            max-width: auto;
+            min-height: auto;  
             transition: all 600ms ease-in-out;
             box-shadow: 6px 5px 15px 6px #D7D7D7;
             .card-body{
