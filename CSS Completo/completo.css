@@ -230,8 +230,8 @@ footer .footerContenido .contenido__paginas .contenido__paginas-social li img {
 /* line 114, ../Final/SCSS Completo/completo.scss */
 .plantas .plantas__cactus .card {
   margin: 25px;
-  max-width: 500px;
-  min-height: 450px;
+  max-width: auto;
+  min-height: auto;
   transition: all 600ms ease-in-out;
   box-shadow: 6px 5px 15px 6px #D7D7D7;
 }
@@ -256,8 +256,8 @@ footer .footerContenido .contenido__paginas .contenido__paginas-social li img {
 /* line 132, ../Final/SCSS Completo/completo.scss */
 .plantas .plantas__rosas .card {
   margin: 25px;
-  max-width: 500px;
-  min-height: 450px;
+  max-width: auto;
+  min-height: auto;
   transition: all 600ms ease-in-out;
   box-shadow: 6px 5px 15px 6px #D7D7D7;
 }
@@ -282,8 +282,8 @@ footer .footerContenido .contenido__paginas .contenido__paginas-social li img {
 /* line 150, ../Final/SCSS Completo/completo.scss */
 .plantas .plantas__pinolimon .card {
   margin: 25px;
-  max-width: 500px;
-  min-height: 450px;
+  max-width: auto;
+  min-height: auto;
   transition: all 600ms ease-in-out;
   box-shadow: 6px 5px 15px 6px #D7D7D7;
 }
@@ -308,8 +308,8 @@ footer .footerContenido .contenido__paginas .contenido__paginas-social li img {
 /* line 168, ../Final/SCSS Completo/completo.scss */
 .plantas .plantas__estrella .card {
   margin: 25px;
-  max-width: 500px;
-  min-height: 450px;
+  max-width: auto;
+  min-height: auto;
   transition: all 600ms ease-in-out;
   box-shadow: 6px 5px 15px 6px #D7D7D7;
 }
@@ -360,8 +360,8 @@ footer .footerContenido .contenido__paginas .contenido__paginas-social li img {
 /* line 204, ../Final/SCSS Completo/completo.scss */
 .plantas .plantas__clavel .card {
   margin: 25px;
-  max-width: 500px;
-  min-height: 450px;
+  max-width: auto;
+  min-height: auto;
   transition: all 600ms ease-in-out;
   box-shadow: 6px 5px 15px 6px #D7D7D7;
 }
