@@ -30,6 +30,15 @@ body{
     ". luz luz ."
     ". trans trans ."
     ". abono abono .";
+        .informacion__riego{
+            grid-area: riego;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
         .informacion__luz{
             grid-area: luz;
             display: flex;
